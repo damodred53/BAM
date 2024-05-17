@@ -1,11 +1,19 @@
 
 import React from "react";
+import NavBar from "../../Composants/NavBar/NavBar";
 
 const LandingPage = () => {
 
     return (
 
-        <h1>Ceci est la page d'accueil de la BAM</h1>
+        <>
+            <NavBar />
+            <section >
+                <div className="landingpage">
+
+                </div>
+            </section>
+        </>
 
     )
 }
