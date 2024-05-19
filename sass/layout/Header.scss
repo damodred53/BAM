@@ -1,39 +1,45 @@
 
 .navBar {
-
-
-
+    @include displayflexRow;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    width: 100%;
+    position:fixed;
+    height: 280px;
+    border: solid 8px #E7B453;
+    box-sizing: border-box;
     &_title {
-
+        color : $colorWhiteWriting;
     }
 
     &_logo {
-
-    } 
+        width: 35rem;
+        min-height: 240px;
+    }
 
     &_pages {
+        
 
-
-        &list {
-
-
+        &_list {
+            
+            list-style-type: none;
 
 
             &_links {
-
+                color : $colorWhiteWriting;
+                text-decoration: none;
+                
             }
         }
     }
 
     &_menu {
-        
-        border: 2px solid black;
+        cursor: pointer;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        border: 2px solid white;
         border-radius: 50%;
-        width: fit-content;
-        padding: 0.8rem 1rem;
+        padding: 0.9rem 1.2rem;
         &_picture {
-            width: 1.5rem;
-            
+            width: 2.5rem;
         }
     }
 }

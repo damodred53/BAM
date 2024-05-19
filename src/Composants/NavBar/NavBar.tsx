@@ -1,7 +1,8 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom"
-import BurgerMenu from "../../assets/menu.svg"
+import BurgerMenu from "../../assets/white_menu.svg"
+import LogoBam  from "../../assets/logo_navbar.svg"
 
 const NavBar = () => {
 
@@ -9,12 +10,12 @@ const NavBar = () => {
 
         <div className="navBar">
             <h1 className="navBar_title">Bienvenue à la Brasserie Associative de Montflours</h1>
-            <img className="navBar_logo"/>
+            <img className="navBar_logo" src={LogoBam}/>
             <div className="navBar_pages">
                 <ul className="navBar_pages_list">
-                    <li className="navBar_pages_list_links"><NavLink to="/">La BAM en quelques mots</NavLink></li>
-                    <li className="navBar_pages_list_links"><NavLink to="/description">La BAM en plus de mots</NavLink></li>
-                    <li className="navBar_pages_list_links"><NavLink to="/vente">Une urgence BAM ?</NavLink></li>
+                    <li><NavLink className="navBar_pages_list_links" to="/">La BAM en quelques mots</NavLink></li>
+                    <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de mots</NavLink></li>
+                    <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
                 </ul>
             </div>
             <div className="navBar_menu">
