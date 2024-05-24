@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const NavBar = () => {
 
-   const [isHeaderVisible, setIsHeaderVisible ] = useState(false);
+   const [isHeaderVisible, setIsHeaderVisible ] = useState(true);
 
    const handleDisplayHeader = () => {
     setIsHeaderVisible(!isHeaderVisible);

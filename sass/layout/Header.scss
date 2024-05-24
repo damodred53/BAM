@@ -11,7 +11,7 @@
     &_title {
         max-width: 30%;
         color : $colorWhiteWriting;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         margin-left: 2rem;
     }
 
@@ -51,7 +51,7 @@
         border: 2px solid white;
         border-radius: 50%;
         padding: 0.9rem 1.2rem;
-        position: absolute;
+        position: fixed;
         right: 2rem;
         top: 6rem;
         &_picture {

@@ -1,5 +1,44 @@
 
 .landingpage {
-    height: 100vh;
+    height: 1100%;
     background-color: $colorBackground;
+    color: $colorWhiteWriting;
+
+    &_main {
+        font-size: 45px;
+    }
+
+    &_texte {
+        @include displayflexColumn;
+    }
+
+
+    &_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 70%;
+        font-size: 30px;
+    }
+
+    &_texte_presentation {
+        
+        width: 70%;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 7rem;
+        &_strong {
+            font-size: 28px;
+            font-weight: 900;
+            margin-right: 1rem;
+        }
+    }
+
+    &_quote {
+        font-size: 20px;
+        text-align: end;
+        padding-right: 2rem;
+        font-weight: bold;
+        font-style: italic;
+    }
 }
