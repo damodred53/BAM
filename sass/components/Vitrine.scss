@@ -1,0 +1,18 @@
+
+.vitrine {
+    position: relative;
+
+
+    &_picture {
+        position: absolute;
+        top: 0;
+        left: 18.5%;
+        border : 2px solid #F1CC88;
+        border-radius: 20px;
+        z-index: 1;
+        img {
+            width: 120%;
+            z-index: 1;
+        }
+    }
+}

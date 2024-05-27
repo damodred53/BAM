@@ -5,6 +5,7 @@ import Blonde from "../../assets/LogoBam/Blonde.webp";
 import Brune from "../../assets/LogoBam/Brune.webp";
 import Terroir from "../../assets/LogoBam/Terroir.webp";
 import Masquée from "../../assets/LogoBam/Masquée.webp";
+import Cursor from "../../assets/darkArrow.png";
 
 interface CardFirstColumnProps {
     id: number;
@@ -26,12 +27,15 @@ const CardFirstColumn: React.FC<CardFirstColumnProps> = ({ id, name, presentatio
     return (
         
         <div className="first_column">
-            <h2 className="first_column_title">{name}</h2>
-            <img className="first_column_logo"  src={foundLogoBam} alt="Card Image 1" />
-            <img className="first_column_cursor" alt="Card Image 2" />
+            <span className="first_column_span">
+                <h2 className="first_column_title">{name}</h2>
+                <img className="first_column_logo"  src={foundLogoBam} alt="Card Image 1" />
+            </span>
+            
+            <img className="first_column_cursor" src={Cursor} alt="cursor de sélection jaune"  />
             <div className="first_column_presentation">
                 <p className="first_column_presentation_paragraph">{presentation}</p>
-                <img className="first_column_presentation_logo" alt="Card Image 3" />
+                <img className="first_column_presentation_logo" src={foundLogoBam} alt="Card Image 3" />
             </div>
         </div>
         

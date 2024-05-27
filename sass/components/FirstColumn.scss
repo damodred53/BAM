@@ -1,8 +1,41 @@
 
 .first_column {
-
-
+    @include classicalDisplayflexRow;
+    width: 75%;
+    margin-left: 10rem;
+    margin-bottom: -1rem;
+    
+    &_span {
+        @include displayflexColumn;
+        min-width : 10%
+    }
+    &_title {
+        font-size: 18px;
+    }
     &_logo {
         width: 5rem;
+    }
+
+    &_cursor {
+        width: 2rem;
+        transform : rotate(180deg);
+        margin-right: 3rem
+    }
+
+    &_presentation {
+        @include displayflexRow;
+        background-color: rgba($color: #7D2005, $alpha: 0.9);
+        border: $colorBorderPresentation 2px solid;
+        border-radius: 20px;
+        z-index: 2;
+        width: 70%;
+        &_paragraph {
+            padding: 1.5rem;
+        }
+
+        &_logo {
+            width: 7rem;
+            margin-right: 1.5rem;
+        }
     }
 }

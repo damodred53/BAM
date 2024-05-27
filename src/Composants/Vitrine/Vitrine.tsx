@@ -1,7 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import CardFirstColumn from "../CardFirstColumn/CardFirstColumn";
-import PhotoVitrine from "../../assets/photo_vitrine.png"
+import PhotoVitrine from "../../assets/photo_vitrine.png";
+import CardSecondColumn from "../CardSecondColumn/CardSecondColumn";
 
 const Vitrine = () => {
 
@@ -55,7 +56,7 @@ const Vitrine = () => {
             <div className="vitrine_second_column">
                 {dataBam.map((cardBam) => {
                     return (
-                        cardBam.id >= 7 ? <CardFirstColumn key={cardBam.id} id={cardBam.id} name={cardBam.name} presentation={cardBam.presentation} /> : ""
+                        cardBam.id >= 7 ? <CardSecondColumn key={cardBam.id} id={cardBam.id} name={cardBam.name} presentation={cardBam.presentation} /> : ""
                     )
                 })}
             </div>
