@@ -1,0 +1,1 @@
+/*${isVisible ? 'visible' : 'hidden'}*/

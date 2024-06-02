@@ -2,12 +2,15 @@ import React from "react";
 import NavBar from "../../Composants/NavBar/NavBar";
 import BigHeaderPicture from "../../Composants/BigHeaderPicture/BigHeaderPicture";
 import Vitrine from "../../Composants/Vitrine/Vitrine";
+import { Provider } from "react-redux";
+import { store } from "../../../redux";
 
 const LandingPage = () => {
 
     return (
 
         <>
+        <Provider store={store}>
             <NavBar />
             <section >
                 <div className="landingpage">
@@ -59,6 +62,7 @@ const LandingPage = () => {
 
                 </div>
             </section>
+            </Provider>
         </>
 
     )

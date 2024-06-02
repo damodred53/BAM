@@ -1,71 +1,43 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import CardFirstColumn from "../CardFirstColumn/CardFirstColumn";
 import PhotoVitrine from "../../assets/photo_vitrine.png";
 import CardSecondColumn from "../CardSecondColumn/CardSecondColumn";
 
 const Vitrine = () => {
-
-    const [ dataBam, setDataBam ] = useState<CardBam[]>([]);
-
-    interface CardBam {
-        id: number;
-        name: string;
-        presentation: string;
-    }
+    const [dataBam, setDataBam] = useState([]);
 
     useEffect(() => {
-
         const fetchData = async () => {
-
             try {
-                const  response = await fetch("../../../public/DataBAM/DataBam.json");
-                
-                if (response) {
-                    const data = await response.json();
-                    
-                    setDataBam(data)
-                }
-        
+                const response = await fetch("../../../public/DataBAM/DataBam.json");
+                const data = await response.json();
+                setDataBam(data);
             } catch (error) {
-                console.log("Impossible d'aller chercher les données" , error)
+                console.log("Impossible d'aller chercher les données", error);
             }
-    
-        }
-        fetchData()
-    }, [])
-    
-    console.log("Voici mes données stockées dans mon state : ", dataBam);
-    
+        };
+
+        fetchData();
+    }, []);
 
     return (
         <section className="vitrine">
-            <h1>HONNEUR AUX BAM !!</h1>
-
+            <h1 className="vitrine_main_title">HONNEUR AUX BAM !!</h1>
             <div className="vitrine_first_column">
-                {dataBam.map((cardBam) => {
-                    return (
-                        cardBam.id <= 6 ? <CardFirstColumn key={cardBam.id} id={cardBam.id} name={cardBam.name} presentation={cardBam.presentation} /> : ""
-                    )
-                } )}
+                {dataBam.map((cardBam) => (
+                    cardBam.id <= 6 ? <CardFirstColumn key={cardBam.id} id={cardBam.id} name={cardBam.name} presentation={cardBam.presentation} /> : null
+                ))}
             </div>
-            
             <div className="vitrine_picture">
-                <img src={PhotoVitrine} />
+                <img src={PhotoVitrine} alt="Vitrine" />
             </div>
             <div className="vitrine_second_column">
-                {dataBam.map((cardBam) => {
-                    return (
-                        cardBam.id >= 7 ? <CardSecondColumn key={cardBam.id} id={cardBam.id} name={cardBam.name} presentation={cardBam.presentation} /> : ""
-                    )
-                })}
+                {dataBam.map((cardBam) => (
+                    cardBam.id >= 7 ? <CardSecondColumn key={cardBam.id} id={cardBam.id} name={cardBam.name} presentation={cardBam.presentation} /> : null
+                ))}
             </div>
-
         </section>
-    )
-}
+    );
+};
 
 export default Vitrine;
-
-
-
