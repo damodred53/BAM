@@ -3,6 +3,8 @@ import CardFirstColumn from "../CardFirstColumn/CardFirstColumn";
 import PhotoVitrine from "../../assets/photo_vitrine.png";
 import CardSecondColumn from "../CardSecondColumn/CardSecondColumn";
 
+
+
 const Vitrine = () => {
     const [dataBam, setDataBam] = useState([]);
 
@@ -36,6 +38,7 @@ const Vitrine = () => {
                     cardBam.id >= 7 ? <CardSecondColumn key={cardBam.id} id={cardBam.id} name={cardBam.name} presentation={cardBam.presentation} /> : null
                 ))}
             </div>
+            
         </section>
     );
 };

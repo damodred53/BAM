@@ -4,6 +4,7 @@ import BigHeaderPicture from "../../Composants/BigHeaderPicture/BigHeaderPicture
 import Vitrine from "../../Composants/Vitrine/Vitrine";
 import { Provider } from "react-redux";
 import { store } from "../../../redux";
+import SecondTitle from "../../Composants/SecondTitle/SecondTitle";
 
 const LandingPage = () => {
 
@@ -58,10 +59,13 @@ const LandingPage = () => {
                         <cite> - William Sheakspears - </cite>
                     </blockquote>
 
-                    <Vitrine />
-
+                    
+                    
                 </div>
+                <Vitrine />
+                <SecondTitle textContent="A vot’service !!" />
             </section>
+            
             </Provider>
         </>
 

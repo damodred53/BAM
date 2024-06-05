@@ -3,7 +3,7 @@
     @include classicalDisplayflexRow;
     width: 75%;
     margin-bottom: -1rem;
-    margin-right: 4rem;
+    margin-right: -1rem;
 
     &_span {
         @include displayflexColumn;
@@ -30,7 +30,7 @@
         border-radius: 20px;
         padding-left: 1rem;
         width: 70%;
-
+        color: $colorWhiteWriting;
         &_paragraph {
             padding: 1.5rem;
         }

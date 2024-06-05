@@ -1,0 +1,19 @@
+
+.second_title {
+    @include classicalDisplayflexRow;
+    justify-content: center;
+    column-gap: 5rem;
+    height: 15rem;
+    margin-top: 20rem;
+    color: $colorWhiteWriting;
+    font-weight: bold;
+
+
+    &_picture {
+        width: 9rem;
+    }
+
+    &_sub {
+        font-size: 30px;
+    }
+}
