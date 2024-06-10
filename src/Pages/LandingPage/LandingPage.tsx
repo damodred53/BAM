@@ -5,6 +5,9 @@ import Vitrine from "../../Composants/Vitrine/Vitrine";
 import { Provider } from "react-redux";
 import { store } from "../../../redux";
 import SecondTitle from "../../Composants/SecondTitle/SecondTitle";
+import CardLandingPage from "../../Composants/CardLandingPage/CardLandingPage";
+import Biere from "../../assets/beer.svg";
+import AdresseBlock from "../../Composants/AdresseBlock/AdresseBlock";
 
 const LandingPage = () => {
 
@@ -64,6 +67,14 @@ const LandingPage = () => {
                 </div>
                 <Vitrine />
                 <SecondTitle textContent="A vot’service !!" />
+
+                <div className="article">
+                    <CardLandingPage title={"Animation"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "} />
+                    <CardLandingPage content={Biere} />
+                    <CardLandingPage title={"Tireuse à bière"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "} />
+                </div>
+
+                <AdresseBlock />
             </section>
             
             </Provider>

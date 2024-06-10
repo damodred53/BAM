@@ -1,0 +1,35 @@
+
+.article {
+
+    @include displayflexRow;
+    width: 100%;
+    margin-top: 6rem;
+
+
+    &_card {
+        background-color: $colorBackgroundCard;
+        height: 30rem;
+        width: 20rem;
+        border-radius: 20px;
+
+        &_picture {
+            width: 100%;
+            height: 100%;
+        }
+
+        &_subtitle {
+            color: $colorWritingCard;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+
+        }
+
+        &_paragraph {
+            padding: 0px 20px;
+            color: $colorWhiteWriting;
+            text-align: center;
+            font-size: 22px;
+        }
+    }
+}

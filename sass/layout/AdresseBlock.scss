@@ -1,0 +1,33 @@
+
+.adresseBlock {
+
+    margin-top: 15rem;
+
+    &_title {
+        color: $colorWhiteWriting;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 10px;
+    }
+
+    &_maindiv {
+        @include displayflexRow;
+
+
+
+
+        &_subdiv {
+            width: 20%;
+            @include displayflexColumn;
+            
+
+            &_paragraph {
+                width: 50%;
+                color: $colorWhiteWriting;
+                font-size: 25px;
+                text-align: center;
+                font-weight: 700;
+            } 
+        }
+    }
+}
