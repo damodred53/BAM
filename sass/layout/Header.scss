@@ -17,8 +17,10 @@
     }
 
     &_logo {
-        height: 45rem;
+        height: 80%;
         margin-left: -5%;
+        margin-right: 5rem;
+        
     }
 
     &_pages {
@@ -65,4 +67,10 @@
 .navBar_pages_list_links:hover {
     outline: 2px solid $colorBackground;
     border-radius: 20px;   
+}
+
+// gestion de la page active sur la navbar.
+.active {
+    outline: 2px solid $colorBackground;
+    border-radius: 20px;  
 }

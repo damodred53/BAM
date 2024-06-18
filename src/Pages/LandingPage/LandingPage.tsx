@@ -8,6 +8,7 @@ import SecondTitle from "../../Composants/SecondTitle/SecondTitle";
 import CardLandingPage from "../../Composants/CardLandingPage/CardLandingPage";
 import Biere from "../../assets/beer.svg";
 import AdresseBlock from "../../Composants/AdresseBlock/AdresseBlock";
+import Footer from "../../Composants/Footer/Footer";
 
 const LandingPage = () => {
 
@@ -75,6 +76,7 @@ const LandingPage = () => {
                 </div>
 
                 <AdresseBlock />
+                <Footer />
             </section>
             
             </Provider>

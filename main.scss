@@ -17,14 +17,20 @@
 @import "./sass/components/SecondColumn.scss";
 @import "./sass/components/SecondTitle.scss";
 @import "./sass/components/CardLandingPage.scss";
-
+@import "./sass/components/GoogleMap.scss";
+@import "./sass/components/DropdownMenu.scss";
+@import"./sass/components/CustomScrollbar.scss";
 
 // gestion des imports de la partie page
 @import "./sass/pages/LandingPage.scss";
+@import "./sass/pages/Vente.scss";
 
 // gestion des imports de la partie layout
 @import "./sass/layout/Header.scss";
 @import "./sass/layout/AdresseBlock.scss";
+@import "./sass/layout/Footer.scss";
+@import "./sass/layout/DroppingMenusPart.scss";
+@import "./sass/layout/Mapping.scss";
 
 
 

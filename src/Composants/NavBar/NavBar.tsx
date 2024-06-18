@@ -2,7 +2,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom"
 import BurgerMenu from "../../assets/white_menu.svg"
-import LogoBam  from "../../assets/logo_navbar.svg"
+import LogoBam  from "../../assets/logo_navbar.png"
 import { useState } from "react";
 
 

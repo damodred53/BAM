@@ -1,0 +1,13 @@
+
+.menus_part {
+
+    @include displayflexColumn;
+    width: 100%;
+    &_title {
+        text-transform: uppercase;
+        color: $colorWhiteWriting;
+        text-align: center;
+        margin: 5rem 0rem 7rem 0rem;
+        font-size: 34px;
+    }
+}

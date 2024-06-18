@@ -1,0 +1,9 @@
+
+.custom-scrollbar {
+    scrollbar-width: thin;
+    ::-webkit-scrollbar-thumb {
+        background: red;
+        border: 3px solid blue;
+    }
+}
+

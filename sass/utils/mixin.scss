@@ -5,6 +5,13 @@
     align-items: center;
 }
 
+@mixin displayFlexGoogleMap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 @mixin displayflexRow {
     display: flex;
     flex-direction: row;
