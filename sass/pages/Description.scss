@@ -1,0 +1,5 @@
+
+.nature_progres {
+    @include displayflexColumn;
+    background-color: red($color: #000000);
+}

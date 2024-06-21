@@ -1,0 +1,50 @@
+
+.irregulomadaire  {
+
+    color: $colorWhiteWriting;
+    @include  displayflexColumn;
+    
+
+    &_title {
+        font-size: 34px;
+        margin-bottom: 3rem;
+        margin-top: 6rem;
+        letter-spacing: 5px;
+        width: 70%;
+    }
+
+    &_presentation {
+
+        width: 70%;
+
+        &_paragraph {
+            font-size: 24px;
+            width: 50%;
+            font-weight: 700;
+        }
+
+        &_picture {
+            width: 100%;
+        }
+    }
+
+    &_numero {
+
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 5rem;
+        row-gap: 3rem;
+
+        &_link {
+            border: 2px white solid;
+            border-radius: 10px;
+            padding: 1rem;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            font-size: 20px;
+            text-decoration: none;
+            color: $colorWhiteWriting;
+        }
+    }
+}
