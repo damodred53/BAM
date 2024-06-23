@@ -1,13 +1,19 @@
 
 
 import React from "react";
+import NavBar from "../../Composants/NavBar/NavBar";
+import Footer from "../../Composants/Footer/Footer";
+import MentionsLegalesText from "../../Composants/MentionsLegales/MentionsLegalesText";
 
 const MentionLegales = () => {
 
     return (
 
-        <h1>Ceci est la page des mentions légales de la BAM</h1>
-
+        <section className="legales">
+            <NavBar />
+            <MentionsLegalesText />
+            <Footer />
+        </section>
     )
 }
 

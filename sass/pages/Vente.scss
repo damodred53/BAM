@@ -19,3 +19,13 @@
         text-align: center;
     }
 }
+
+.urgence {
+
+    &_paragraph {
+
+        color: $colorWhiteWriting;
+        font-size: 22px;
+        font-weight: 700;
+    }
+}

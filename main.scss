@@ -19,12 +19,15 @@
 @import "./sass/components/CardLandingPage.scss";
 @import "./sass/components/GoogleMap.scss";
 @import "./sass/components/DropdownMenu.scss";
-@import"./sass/components/CustomScrollbar.scss";
+@import "./sass/components/CustomScrollbar.scss";
+
 
 // gestion des imports de la partie page
 @import "./sass/pages/LandingPage.scss";
 @import "./sass/pages/Vente.scss";
 @import "./sass/pages/Description.scss";
+
+
 
 // gestion des imports de la partie layout
 @import "./sass/layout/Header.scss";
@@ -34,6 +37,9 @@
 @import "./sass/layout/Mapping.scss";
 @import "./sass/layout/NatureProgres.scss";
 @import "./sass/layout/Irregulomadaire.scss";
+@import "./sass/layout/MentionsLegalesText.scss";
+@import "./sass/layout/NavBarAbsolute.scss";
+
 
 
 

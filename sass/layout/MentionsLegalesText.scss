@@ -1,0 +1,14 @@
+
+.mentions {
+    color: $colorWhiteWriting;
+    @include displayflexMentionsLegales;
+    padding-top: 25rem;
+    width: 85%;
+    margin-left: 8rem;
+    font-size: 24px;
+
+    
+    &_title {
+        margin: 0%;
+    }
+}

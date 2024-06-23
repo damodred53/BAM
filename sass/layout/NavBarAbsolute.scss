@@ -1,0 +1,76 @@
+
+.navBar_absolute {
+    @include displayflexRow;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    width: 100%;
+    position:absolute;
+    height: 280px;
+    border: solid 4px black;
+    box-sizing: border-box;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    z-index: 998;
+    &_title {
+        max-width: 30%;
+        color : $colorWhiteWriting;
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+
+    &_logo {
+        height: 80%;
+        margin-left: -5%;
+        margin-right: 5rem;
+        
+    }
+
+    &_pages {
+        
+        &_list {
+            display: grid;
+            line-height: 1.5; 
+            grid-template-columns: 1fr 1fr;
+            column-gap: 3rem;
+            row-gap: 1rem;
+            list-style-type: none;
+            font-size: 28px;
+            padding: 0%;
+            margin-left: -25%;
+            width: 100%;
+            
+            &_links {
+                color : $colorWhiteWriting;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 1rem;
+                display: inline-block;
+            }
+        }
+    }
+
+    &_menu {
+        margin-right: 2%;
+        cursor: pointer;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 0.9rem 1.2rem;
+        position: fixed;
+        right: 2rem;
+        top: 6rem;
+        z-index: 999;
+        &_picture {
+            width: 2.5rem;
+        }
+    }
+}
+
+.navBar_pages_list_links:hover {
+    outline: 2px solid $colorBackground;
+    border-radius: 20px;   
+}
+
+// gestion de la page active sur la navbar.
+.active {
+    outline: 2px solid $colorBackground;
+    border-radius: 20px;  
+}

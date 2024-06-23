@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../../Composants/NavBar/NavBar";
 import BigHeaderPicture from "../../Composants/BigHeaderPicture/BigHeaderPicture";
 import Vitrine from "../../Composants/Vitrine/Vitrine";
@@ -9,8 +9,24 @@ import CardLandingPage from "../../Composants/CardLandingPage/CardLandingPage";
 import Biere from "../../assets/beer.svg";
 import AdresseBlock from "../../Composants/AdresseBlock/AdresseBlock";
 import Footer from "../../Composants/Footer/Footer";
+import { useLocation } from "react-router-dom";
 
 const LandingPage = () => {
+
+    const location = useLocation();
+    
+
+    useEffect(() => {
+        const hash = location.hash;
+        console.log("voici le hash", hash);
+        if (hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+                /*element.scrollIntoView({ behavior: "smooth" });*/
+                window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+            }
+        }
+    }, [location]);
 
     return (
 
@@ -75,8 +91,14 @@ const LandingPage = () => {
                     <CardLandingPage title={"Tireuse à bière"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "} />
                 </div>
 
-                <AdresseBlock />
-                <Footer />
+                
+                    <AdresseBlock />
+
+                    <span id="contact">
+                        <Footer />
+                    </span>
+                
+                
             </section>
             
             </Provider>
