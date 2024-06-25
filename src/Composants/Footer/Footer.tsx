@@ -16,7 +16,7 @@ const Footer = () => {
                 <p ><NavLink className="footer_div_paragraph" to='/legales'>Mentions légales</NavLink></p>
              </div>
 
-            <img className="footer_label" src={NatureProgres} />
+            <a href="https://natureetprogres.org/?Accueil" target="_blank"><img className="footer_label" src={NatureProgres} alt="logo du label Nature et Découverte"/></a>
         </div>
 
     )

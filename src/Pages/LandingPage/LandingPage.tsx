@@ -18,12 +18,12 @@ const LandingPage = () => {
 
     useEffect(() => {
         const hash = location.hash;
-        console.log("voici le hash", hash);
         if (hash) {
             const element = document.querySelector(hash);
             if (element) {
-                /*element.scrollIntoView({ behavior: "smooth" });*/
-                window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+                setTimeout(() => { 
+                    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+                 }, 500);
             }
         }
     }, [location]);
@@ -91,12 +91,17 @@ const LandingPage = () => {
                     <CardLandingPage title={"Tireuse à bière"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "} />
                 </div>
 
-                
-                    <AdresseBlock />
+                <blockquote className="landingpage_quote centerflex">
+                        <p> “BAM : la bière est artisanale, la brasserie est associative” </p>
+                        <cite> - Cédric Soufflet - </cite>
+                </blockquote>
 
-                    <span id="contact">
-                        <Footer />
-                    </span>
+                <span id="contact">
+                    <AdresseBlock />
+                </span>
+                
+                <Footer />
+                
                 
                 
             </section>

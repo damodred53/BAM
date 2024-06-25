@@ -5,18 +5,20 @@ import NavBar from "../../Composants/NavBar/NavBar";
 import Footer from "../../Composants/Footer/Footer";
 import BigHeaderPicture from "../../Composants/BigHeaderPicture/BigHeaderPicture";
 import SecondTitle from "../../Composants/SecondTitle/SecondTitle";
-import PointsDeVente from "../../points_de_vente.png";
 import GoogleMap from "../../Composants/GoogleMap";
-
+import BigHeaderDescription from "../../Composants/BigPictureDescription/BigPictureDescription";
+import Entrepot from "../../assets/entrepot.png";
 
 const Vente = () => {
+
+   
 
     return (
 
        
         <section>
             <NavBar />
-            <BigHeaderPicture />
+            <BigHeaderDescription picture={Entrepot} />
             <hr className="brown_bare2"></hr>
             <SecondTitle className="second_title_vente" textContent="URGENCE BAM !!"/>
             <div className="vente">

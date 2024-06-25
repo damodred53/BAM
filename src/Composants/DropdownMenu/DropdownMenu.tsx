@@ -1,13 +1,16 @@
 import React from "react";
 import Cursor from "../../assets/cursor.svg";
 import { useRef, useState } from "react";
+import InstagramLogo from "../../assets/InstagramLogo.svg";
+import MayenneLogo from "../../assets/bougerMayenne.png";
 
 interface DropdownMenuProps {
     paragraphe: string;
     titre : string;
+    image? : boolean;
 }
 
-const DropdownMenu: React.FC<DropdownMenuProps> = ({paragraphe, titre}) => {  
+const DropdownMenu: React.FC<DropdownMenuProps> = ({paragraphe, titre, image}) => {  
 
 const dropdownContentPart = useRef(null)
 const [isDisplayActivated, setIsDisplayActivated] = useState(false)
@@ -39,7 +42,28 @@ const [isDisplayActivated, setIsDisplayActivated] = useState(false)
             <div className="dropdown_invisible_part_paragraph">
                 <span className="dropdown_invisible_part_paragraph_span">{paragraphe}</span>
             </div>
+            {image ? 
+                <div className="imageMainDiv">
+                    <div className="imageMainDiv_div">
+                        <p className="imageMainDiv_div_paragraph">Venez découvrir l’Instragram de la BAM </p>
+                        <a href="" className="imageMainDiv_div_link">
+                            <img className="imageMainDiv_div_link_picture" src={InstagramLogo} />
+                        </a>
+                    </div>
+
+                    <div className="imageMainDiv_div">
+                        <a className="imageMainDiv_div_link" href="https://www.bouger-en-mayenne.com/" target="_blank">
+                            <img className="imageMainDiv_div_link_picture2"  src= {MayenneLogo} />
+                        </a>
+                        <p className="imageMainDiv_div_paragraph">Pour venir bouger en Mayenne</p>
+                    </div>
+                </div>
+                : ""
+            }
         </div>
+
+        
+        
     </div>
 )
 }

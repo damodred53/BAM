@@ -3,7 +3,7 @@ import React from "react";
 import Curseur from "../../assets/Curseur.png";
 import Enveloppe from "../../assets/enveloppe.svg";
 import Telephone from "../../assets/Telephone.png";
-import imageBam from "../../assets/imageBAM.png";
+import imageBam from "../../assets/Essai_BAM.png";
 import { useState } from "react";
 
 

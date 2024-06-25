@@ -6,3 +6,5 @@
                     cardBam.id >= 7 ? <CardSecondColumn key={cardBam.id} id={cardBam.id} name={cardBam.name} presentation={cardBam.presentation} /> : null
                 ))}
             </div>
+
+

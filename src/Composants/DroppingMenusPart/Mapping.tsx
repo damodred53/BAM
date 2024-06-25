@@ -22,7 +22,7 @@ const Mapping = () => {
             {
                 data.map((contentMenu) => {
                     return (
-                        <DropdownMenu titre={contentMenu.titre} paragraphe={contentMenu.texte}/>
+                        <DropdownMenu key={contentMenu.titre} titre={contentMenu.titre} paragraphe={contentMenu.texte} {...(contentMenu.image ? { image: contentMenu.image } : {})}/>
                     )
                 } )
             }

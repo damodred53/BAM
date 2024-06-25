@@ -4,8 +4,10 @@
     margin-top: 8rem;
     min-width: 1824px;
     &_main_title {
+        color: $colorWhiteWriting;
         text-align: center;
         font-size: 25px;
+        
     }
 
 
@@ -24,12 +26,13 @@
 .vitrine_first_column {
 
     background-color: $colorBackground;
+    color: $colorWhiteWriting;
 }
 .vitrine_second_column {
     margin-top: -60rem;
-    /*padding-left: 20rem;*/
     display: flex;
     flex-direction: column;
     align-items: end;
+    color: $colorWhiteWriting;
     
 }

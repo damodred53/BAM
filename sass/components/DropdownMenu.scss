@@ -36,15 +36,17 @@
         display: none;
         animation : heightOnex 2s ;
         overflow: hidden;
-        height: 15rem;
+        height: 17rem;
         overflow-y: auto;
         margin-top: -0.5rem;
+        
         &_paragraph {
             display: flex;
             flex-direction: column;
             height: max-content;
             content-visibility: auto;
             font-size: 18px;
+            text-overflow: ellipsis;
             &_list {
                 margin: 0.2rem;
             }
@@ -80,6 +82,40 @@
             margin-top: 0.3rem;
         }
     }
+}
+
+
+// mise en page pour les image et textes du quatrième menu 
+
+.imageMainDiv {
+
+    @include displayflexColumn;
+
+    margin-top: 2rem;
+        &_div {
+
+            @include displayFlexGoogleMap;
+            &_paragraph {
+                color: $colorWhiteWriting;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            
+
+            &_link {
+
+                &_picture {
+                    width: 75%;
+                    margin-left: 2rem;
+                }
+
+                &_picture2 {
+                    width: 75%;
+                }
+            }
+            
+        }    
 }
 
 
