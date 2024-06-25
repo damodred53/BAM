@@ -6,7 +6,7 @@ const Erreur = () => {
     return (
         <div>
             <NavBar />
-            <h1>Ceci est la page d'erreur de la BAM</h1>
+            <h1 className="erreur">Ceci est la page d'erreur de la BAM</h1>
             <Footer />
         </div>
     )
