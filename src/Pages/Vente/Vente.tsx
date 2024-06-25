@@ -1,9 +1,7 @@
 
-import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../../Composants/NavBar/NavBar";
 import Footer from "../../Composants/Footer/Footer";
-import BigHeaderPicture from "../../Composants/BigHeaderPicture/BigHeaderPicture";
 import SecondTitle from "../../Composants/SecondTitle/SecondTitle";
 import GoogleMap from "../../Composants/GoogleMap";
 import BigHeaderDescription from "../../Composants/BigPictureDescription/BigPictureDescription";

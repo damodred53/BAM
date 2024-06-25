@@ -1,5 +1,4 @@
 
-import React from "react";
 import IrregulomadairePicture from "../../assets/Irregulomadaire.svg";
 import numero1 from "../../Irregulomadaires/Irregulo_1.pdf";
 import numero2 from "../../Irregulomadaires/Irregulo_2.pdf";

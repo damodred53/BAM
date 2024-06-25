@@ -1,5 +1,5 @@
 
-const handleDisplayPresentation = ( isVisible ) => {
+const handleDisplayPresentation = () => {
 
     let eachPresentation : NodeListOf<HTMLElement>;
     try {

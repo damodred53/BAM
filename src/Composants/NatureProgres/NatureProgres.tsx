@@ -1,5 +1,4 @@
 
-import React from "react";
 import NatureProgresLogo from "../../assets/nature_et_progres.svg";
 
 const NatureProgres = () => {

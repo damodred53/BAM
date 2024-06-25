@@ -1,4 +1,4 @@
-import React from "react";
+
 import BigPicture from "..//../assets/big_header_picture.png";
 
 const BigHeaderPicture = () => {

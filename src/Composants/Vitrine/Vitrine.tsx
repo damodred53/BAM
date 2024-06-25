@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import CardFirstColumn from "../CardFirstColumn/CardFirstColumn";
 import PhotoVitrine from "../../assets/photo_vitrine.png";
 import CardSecondColumn from "../CardSecondColumn/CardSecondColumn";

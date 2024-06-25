@@ -1,5 +1,4 @@
 
-import React from "react";
 import NavBar from "../../Composants/NavBar/NavBar";
 import PictureDescription from "../../assets/pictureDescription.png";
 import BigHeaderDescription from "../../Composants/BigPictureDescription/BigPictureDescription";

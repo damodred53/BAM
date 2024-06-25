@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+
 import NavBar from "../../Composants/NavBar/NavBar";
 import BigHeaderPicture from "../../Composants/BigHeaderPicture/BigHeaderPicture";
 import Vitrine from "../../Composants/Vitrine/Vitrine";
@@ -10,6 +10,8 @@ import Biere from "../../assets/beer.svg";
 import AdresseBlock from "../../Composants/AdresseBlock/AdresseBlock";
 import Footer from "../../Composants/Footer/Footer";
 import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
 
 const LandingPage = () => {
 

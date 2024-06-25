@@ -1,5 +1,4 @@
 
-import React from "react";
 import { useState, useEffect } from "react";
 import { fetchDropdownDatas } from "../../Services/Services.tsx";
 import { useDispatch } from "react-redux";

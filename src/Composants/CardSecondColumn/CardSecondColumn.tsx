@@ -5,7 +5,6 @@ import Poussin from "../../assets/LogoBam/Poussin.webp";
 import Noel from "../../assets/LogoBam/Noël.webp";
 import Cervoise from "../../assets/LogoBam/Cervoise.webp";
 import Cursor from "../../assets/darkArrow.png";
-import {useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setVisiblePresentation } from "../../../redux";
 

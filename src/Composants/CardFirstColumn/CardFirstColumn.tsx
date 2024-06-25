@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+
 import { useDispatch, useSelector } from "react-redux";
 import Blanche from "../../assets/LogoBam/Blanche.webp";
 import Ambrée from "../../assets/LogoBam/Ambrée.webp";
@@ -8,6 +8,7 @@ import Terroir from "../../assets/LogoBam/Terroir.webp";
 import Masquée from "../../assets/LogoBam/Masquée.webp";
 import Cursor from "../../assets/darkArrow.png";
 import { setVisiblePresentation } from "../../../redux";
+import { useRef } from "react";
 
 const CardFirstColumn = ({ id, name, presentation }) => {
     const logoContentPart = useRef(null);

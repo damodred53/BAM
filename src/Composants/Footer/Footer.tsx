@@ -1,5 +1,4 @@
 
-import React from "react";
 import logoNoir from "../../assets/LogoBam/Stout.webp";
 import NatureProgres from "../../assets/natureEtProgres.svg";
 import { NavLink } from "react-router-dom";

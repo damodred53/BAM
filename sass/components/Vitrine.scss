@@ -10,7 +10,6 @@
         
     }
 
-
     &_picture {
 
         @include displayflexRow;
@@ -23,16 +22,16 @@
         }
     }
 }
-.vitrine_first_column {
 
+.vitrine_first_column {
     background-color: $colorBackground;
     color: $colorWhiteWriting;
 }
+
 .vitrine_second_column {
     margin-top: -60rem;
     display: flex;
     flex-direction: column;
     align-items: end;
     color: $colorWhiteWriting;
-    
 }

@@ -1,5 +1,3 @@
-import React from "react";
-import Biere from "../../assets/beer.svg";
 
 interface CardLandingPageProp {
     content : React.ReactNode;
