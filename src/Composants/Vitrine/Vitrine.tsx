@@ -11,7 +11,7 @@ const Vitrine = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("../../DataBAM/DataBam.json");
+                const response = await fetch("../../../DataBAM/DataBam.json");
                 const data = await response.json();
                 setDataBam(data);
             } catch (error) {
