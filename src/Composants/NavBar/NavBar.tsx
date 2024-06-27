@@ -22,7 +22,7 @@ const NavBar = () => {
                 <img className="navBar_logo" src={LogoBam}/>
                 <div className="navBar_pages">
                     <ul className="navBar_pages_list">
-                        <li><NavLink className="navBar_pages_list_links" to="/BAM" >La BAM en <br/> quelques mots</NavLink></li>
+                        <li><NavLink className="navBar_pages_list_links" to="/" >La BAM en <br/> quelques mots</NavLink></li>
                         <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de <br/> mots</NavLink></li>
                         <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
                     </ul>
@@ -34,7 +34,7 @@ const NavBar = () => {
                 <img className="navBar_logo" src={LogoBam}/>
                 <div className="navBar_pages">
                     <ul className="navBar_pages_list">
-                        <li><NavLink className="navBar_pages_list_links" to="/BAM" >La BAM en <br/> quelques mots</NavLink></li>
+                        <li><NavLink className="navBar_pages_list_links" to="/" >La BAM en <br/> quelques mots</NavLink></li>
                         <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de <br/> mots</NavLink></li>
                         <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
                     </ul>
