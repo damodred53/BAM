@@ -9,14 +9,16 @@
 
     &_logo {
         width: 9rem;
+        
     }
 
     &_label {
         width: 13rem;
+        
     }
 
     &_div {
-
+        
         color: $colorWhiteWriting;
         @include displayflexColumn;
 
@@ -36,4 +38,58 @@
 .footer_div_paragraph:hover {
     text-decoration: underline;
     font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+
+    .footer_div_title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .footer_div_title {
+        font-size: 16px;
+    }
+    .footer_logo{
+        width: 7rem;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .footer_label {
+        width: 8rem;
+    }
+
+    .footer_logo {
+        width: 6rem;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .footer {
+        @include displayflexColumn;
+        padding: 2rem;
+    }
+
+    .footer_logo {
+        order: 2;
+        margin-bottom: 1rem;
+    }
+
+    .footer_label {
+        order: 1;
+        margin-bottom: 1rem;
+        width: 10rem;
+    }
+
+    .footer_div {
+        order: 3;
+        text-align: center;
+    }
+    
+    
 }

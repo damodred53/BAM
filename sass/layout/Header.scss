@@ -1,4 +1,8 @@
-
+.main_navbar {
+    display: flex;
+    flex-direction: column;
+    
+}
 .navBar {
     @include displayflexRow;
     background-color: rgba($color: #000000, $alpha: 0.6);
@@ -9,6 +13,7 @@
     box-sizing: border-box;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     z-index: 998;
+
     &_title {
         max-width: 30%;
         color : $colorWhiteWriting;
@@ -69,8 +74,185 @@
     border-radius: 20px;   
 }
 
+.hidden_menu {
+    color : $colorWhiteWriting;
+    display: none;
+    
+}
+
 // gestion de la page active sur la navbar.
 .active {
     outline: 2px solid $colorBackground;
     border-radius: 20px;  
+}
+
+
+
+/* Gestion des medias queries */
+
+
+@media (max-width: 1650px) {
+
+    .navBar_title {
+        font-size: 1.8rem;
+    }
+
+    .navBar_pages_list {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1380px) {
+
+    .navBar_title {
+       max-width: 20%;
+    }
+
+    .navBar_pages_list {
+        column-gap: 0.5rem;
+    }
+
+    .navBar_logo {
+        margin-right: 0%;
+    }
+
+    .navBar_pages_list {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1380px) {
+
+    .navBar_title {
+       max-width: 15%;
+       margin: 0%;
+       font-size: 1.5rem;
+    }
+
+    
+}
+
+@media (max-width: 1060px) {
+
+    .navBar_pages_list {
+       margin-left: -18%;
+    }
+
+    
+}
+
+@media (max-width: 900px) {
+
+    .navBar {
+        display: flex;
+        justify-content: flex-start;
+        align-items:flex-start; 
+        padding-top: 3rem;
+        height: 330px;
+        padding-left: 5rem;
+        
+    }
+    .navBar_absolute {
+        display: flex;
+        justify-content: flex-start!important;
+        align-items:flex-start!important; 
+        padding-top: 3rem;
+        height: 330px!important;
+        padding-left: 5rem;
+        
+    }
+
+    .navBar_logo {
+       margin-left: 3rem;
+       width: 20%;
+       height: 60%;
+    }
+
+    .navBar_pages {
+       display: none;
+    }
+    .hidden_menu {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        right: 45%;        
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.2rem;
+        cursor: pointer;
+        width: 100%;
+        
+        &_navBar_pages_list {
+            text-decoration: none;
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 100%;
+            font-size: 18px;
+            padding-top: 2rem;
+        }
+    }
+
+    .navBar_title {
+        max-width: 35%;
+        margin: 0%;
+        font-size: 1.7rem;
+        padding-top: 1rem;
+     }
+
+     .hidden_menu_navBar_pages_links:hover {
+        outline: 2px solid $colorBackground;
+        border-radius: 20px;   
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .navBar_pages_list_links {
+        font-size: 14px;
+    }
+
+    .navBar_title {
+        font-size: 1.3rem; 
+    }
+
+    .navBar_logo {
+        width: 30%;
+        margin-left: 1.5rem;
+    }
+
+    .hidden_menu_navBar_pages_list {
+        column-gap: 0rem;
+        width: 90%;
+    }
+
+}
+
+@media (max-width : 550px) {
+    .navBar_title {
+        font-size: 1.3rem; 
+        width: 30%;
+    }
+
+    .navBar_logo {
+        width: 25%;
+        height: 45%;
+        margin-left: 1.5rem;
+    }
+
+    .navBar {
+        padding-top: 2rem;
+        height: 300px!important;
+        padding-left: 3rem;
+    }
+    .navBar_absolute {
+        padding-top: 2rem;
+        height: 300px!important;
+        padding-left: 3rem;
+    }
+    .navBar_menu {
+        top: 3rem;
+    }
 }

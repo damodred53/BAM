@@ -8,3 +8,39 @@
         height: 37rem;
     }
 }
+
+/* gestion des medias queries */
+
+@media (max-width : 1450px) {
+
+    .bigheaderpicture {
+        padding-left: 15%;
+    }
+}
+
+@media (max-width : 1180px) {
+
+    .bigheaderpicture {
+        padding-left: 10%;
+    }
+}
+
+@media (max-width : 1075px) {
+
+    .bigheaderpicture {
+        padding-left: 0%;
+    &_picture {
+        width: 100%;
+    }
+}
+}
+
+@media (max-width : 700px) {
+
+    .bigheaderpicture {
+       
+    &_picture {
+        height: 25rem;
+    }
+}
+}

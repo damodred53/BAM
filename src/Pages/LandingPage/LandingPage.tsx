@@ -84,7 +84,7 @@ const LandingPage = () => {
                     
                     
                 </div>
-                <Vitrine />
+                
                 <SecondTitle textContent="A vot’service !!" />
 
                 <div className="article">

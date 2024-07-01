@@ -15,39 +15,61 @@ const NavBar = () => {
 
     return (
 
-        <>
-        {isHeaderVisible ? 
-            <div className="navBar ">
-                <h1 className="navBar_title">Bienvenue à la Brasserie Associative de Montflours</h1>
-                <img className="navBar_logo" src={LogoBam}/>
-                <div className="navBar_pages">
-                    <ul className="navBar_pages_list">
-                        <li><NavLink className="navBar_pages_list_links" to="/" >La BAM en <br/> quelques mots</NavLink></li>
-                        <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de <br/> mots</NavLink></li>
-                        <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
-                    </ul>
-                </div>
-            </div>  : 
-            
-            <div className="navBar_absolute ">
-                <h1 className="navBar_title">Bienvenue à la Brasserie Associative de Montflours</h1>
-                <img className="navBar_logo" src={LogoBam}/>
-                <div className="navBar_pages">
-                    <ul className="navBar_pages_list">
-                        <li><NavLink className="navBar_pages_list_links" to="/" >La BAM en <br/> quelques mots</NavLink></li>
-                        <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de <br/> mots</NavLink></li>
-                        <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
-                    </ul>
-                </div>
-            </div>
-            }
-
-            <div className="navBar_menu">
-                <img className="navBar_menu_picture" onClick={handleDisplayHeader}  src={BurgerMenu}/>
-            </div>
         
-        </>
+        <div >
+            {isHeaderVisible ? 
+            
+                <div className="navBar">
+                    <h1 className="navBar_title">Bienvenue à la Brasserie Associative de Montflours</h1>
+                    <img className="navBar_logo" src={LogoBam}/>
+                    <div className="navBar_pages">
+                        <ul className="navBar_pages_list">
+                            <li><NavLink className="navBar_pages_list_links" to="/" >La BAM en <br/> quelques mots</NavLink></li>
+                            <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de <br/> mots</NavLink></li>
+                            <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className="hidden_menu">
+                        
+                            <ul className="hidden_menu_navBar_pages_list">
+                                <li><NavLink className="navBar_pages_list_links" to="/" >La BAM en <br/> quelques mots</NavLink></li>
+                                <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de <br/> mots</NavLink></li>
+                                <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
+                            </ul>
+                        
+                    </div>
+                </div> 
+        
+             : 
+                
+                <div className="navBar_absolute">
+                    <h1 className="navBar_title">Bienvenue à la Brasserie Associative de Montflours</h1>
+                    <img className="navBar_logo" src={LogoBam}/>
+                    <div className="navBar_pages">
+                        <ul className="navBar_pages_list">
+                            <li><NavLink className="navBar_pages_list_links" to="/" >La BAM en <br/> quelques mots</NavLink></li>
+                            <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de <br/> mots</NavLink></li>
+                            <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className="hidden_menu">
+                        
+                            <ul className="hidden_menu_navBar_pages_list">
+                                <li><NavLink className="navBar_pages_list_links" to="/" >La BAM en <br/> quelques mots</NavLink></li>
+                                <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de <br/> mots</NavLink></li>
+                                <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
+                            </ul>
+                        
+                    </div>
+                </div>
+                }
 
+                <div className="navBar_menu">
+                    <img className="navBar_menu_picture" onClick={handleDisplayHeader}  src={BurgerMenu}/>
+                </div>
+            
+        </div>
+        
     )
 }
 
