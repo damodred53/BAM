@@ -66,3 +66,51 @@
         }
     }
 }
+
+/* gestion des medias queries */
+
+@media (max-width:1200px) {
+
+    .adresseBlock_maindiv {
+        margin-left: 2rem;
+    }
+    .adresseBlock_maindiv_picture {
+        width: 23rem;
+    }
+
+    .adresseBlock_maindiv_subdiv_paragraph {
+        font-size: 18px;
+    }
+    .adresseBlock_maindiv_subdiv_under_paragraph_sub {
+        font-size: 18px;
+    }
+    
+}
+
+@media (max-width:900px) {
+
+    .adresseBlock_maindiv_picture {
+        display: none;
+    }
+
+    .adresseBlock_maindiv {
+        @include displayflexColumn;
+    }
+
+    .adresseBlock_maindiv_subdiv_paragraph {
+        font-size: 25px;
+        width: 100%;
+    }
+    .adresseBlock_maindiv_subdiv_under_paragraph_sub {
+        font-size: 25px;
+    }
+    .adresseBlock_maindiv_subdiv {
+        width: 100%;
+    }
+}
+
+/* traitement particulier de l'adresse qui est très longue */
+
+.true_adress {
+    font-size: 18px;
+}

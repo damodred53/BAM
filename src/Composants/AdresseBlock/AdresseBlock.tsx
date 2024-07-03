@@ -28,7 +28,7 @@ const AdresseBlock = () => {
                 <img className="adresseBlock_maindiv_picture" src={imageBam}/>
                 <div className="adresseBlock_maindiv_subdiv">
                     <img className="adresseBlock_maindiv_subdiv_logo"  src={Curseur} />
-                    <p className="adresseBlock_maindiv_subdiv_paragraph">ZA du Mottay Route de Sacé 53240 MONTFLOURS</p>
+                    <p className="adresseBlock_maindiv_subdiv_paragraph">ZA du Mottay Route de Sacé <br/>53240 Montflours</p>
                 </div>
                 <div className="adresseBlock_maindiv_subdiv">
                     <div className="adresseBlock_maindiv_subdiv_under" onClick={handleDisplay}>
@@ -45,7 +45,7 @@ const AdresseBlock = () => {
                         {!mailDisplay ? 
                             <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub">Cliquez pour voir</p>
                             :
-                            <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub">brasserie.montflours@orange.fr</p>
+                            <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub true_adress">brasserie.montflours@orange.fr</p>
                             }
                         
                     </div>

@@ -49,3 +49,52 @@
     @include displayflexColumn;
     font-size: 22px;
 };
+
+/* Gestion des medias queries */
+
+@media (max-width: 1000px) {
+
+    .landingpage {
+
+        &_main {
+            font-size: 30px;
+        }
+
+        &_title {
+            font-size: 22px;
+        }
+
+        &_texte_presentation p {
+            font-size: 18px;
+        }
+
+        &_texte_presentation p strong {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .landingpage {
+
+        &_main {
+            font-size: 25px;
+        }
+
+        &_title {
+            font-size: 20px;
+        }
+
+        &_texte_presentation p {
+            font-size: 16px;
+        }
+
+        &_texte_presentation p strong {
+            font-size: 20px;
+        }
+
+        &_quote {
+            font-size: 18px;
+        }
+    }
+}
