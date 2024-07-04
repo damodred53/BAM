@@ -9,5 +9,15 @@
         text-align: center;
         margin: 5rem 0rem 7rem 0rem;
         font-size: 34px;
+        letter-spacing: 10px;
     }
+}
+
+/* gestion de smedia query */
+
+@media (max-width:1600px) {
+    .menus_part_title {
+        font-size: 28px;
+    }
+   
 }

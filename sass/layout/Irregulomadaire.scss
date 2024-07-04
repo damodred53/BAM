@@ -48,3 +48,32 @@
         }
     }
 }
+
+/* gestion des medias queries */
+
+@media (max-width:1050px) {
+
+    .irregulomadaire_title {
+        font-size: 22px;
+        letter-spacing: 5px;
+        text-align: center;
+        margin-bottom: 0rem;
+    }
+
+    .irregulomadaire_presentation_paragraph {
+        font-size: 24px;
+        font-weight: 400;
+        width: 100%;
+        
+    }
+
+    .irregulomadaire_numero {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width:780px) {
+    .irregulomadaire_numero {
+        grid-template-columns: 1fr 1fr;
+    }
+}

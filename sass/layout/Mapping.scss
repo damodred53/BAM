@@ -9,3 +9,23 @@
     row-gap: 5rem;
 
 }
+
+/* gestion des medias queries */
+
+@media(max-width:1050px) {
+
+    .mapping {
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+}
+
+@media(max-width:700px) {
+    .mapping {
+        row-gap: 1rem;
+    }
+    
+}

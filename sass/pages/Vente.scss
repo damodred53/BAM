@@ -29,3 +29,20 @@
         font-weight: 700;
     }
 }
+
+/* gestion des medias queries */
+
+@media(max-width:930px) {
+
+    .vente p{
+        font-size: 18px;
+        margin: 5rem 3rem 0rem 5rem;
+    } 
+
+    .vente_subtitle {
+        font-size: 22px;
+        letter-spacing: 5px;
+        width: 100%;
+        text-align: center;
+    }
+}

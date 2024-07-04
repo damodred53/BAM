@@ -54,3 +54,55 @@
         }
     }
 }
+
+/* gestion des medias query */
+
+@media(max-width:1600px) {
+
+    .nature_title {
+        font-size: 28px;
+        letter-spacing: 10px;
+    }
+}
+
+@media(max-width:1260px) {
+
+    .nature_title {
+        font-size: 28px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+}
+
+@media(max-width:1050px) {
+
+    .nature_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        &_picture {
+            width: 85%;
+        }
+        &_paragraph {
+            width: 88%;
+            
+        }
+        
+    }
+
+    .nature_title {
+        font-size: 22px;
+        letter-spacing: 5px;
+    }
+
+    .nature_div_2_social .nature_div_2_environnement{
+        width: 85%;
+    }
+}
+
+@media(max-width:500px) {
+     .nature_div_2_environnement_paragraph, .nature_div_2_social_paragraph, .nature_div_paragraph {
+        font-size: 16px;
+    }
+}
