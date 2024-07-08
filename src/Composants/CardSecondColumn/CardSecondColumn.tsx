@@ -16,17 +16,17 @@ interface CardSecondColumnProps {
 
 const CardSecondColumn: React.FC<CardSecondColumnProps> = ({ id, name, presentation }) => {
 
-    /*const [isVisible, setIsVisible] = useState(false);*/
+    
 
     const logoBamSecondColumn = [Stout, Mars, Poussin, Noel, Cervoise];
-    /*console.log(id)*/
+    
     let foundLogoBam = "";
     for ( let i = 0 ; i < logoBamSecondColumn.length  ; i++ ) {
-        /*console.log("valeur de i :  ", i)*/
+        
         if (id === i+7) {
             foundLogoBam = logoBamSecondColumn[i];
         } 
-        /*console.log("j'ai trouvé : ", foundLogoBam)*/
+       
     }
 
     /*const logoContentPart = useRef(null);*/
@@ -52,9 +52,10 @@ const CardSecondColumn: React.FC<CardSecondColumnProps> = ({ id, name, presentat
                 <img className="second_column_presentation_logo" src={foundLogoBam} alt="Card Image 3"  />
                 <p className="second_column_presentation_paragraph">{presentation}</p>
             </div>
-
-            <img className="second_column_cursor" src={Cursor} alt="cursor de sélection jaune"  />
-
+            <div className="second_column_container">
+                <img className="second_column_cursor first_column_container_img" src={Cursor} alt="cursor de sélection jaune" />
+            </div>
+            
             <span className="second_column_span">
                 <h2 className="second_column_title">{name}</h2>
                 <img className="second_column_logo"  src={foundLogoBam} alt="Card Image 1" onClick={handleDisplay} />

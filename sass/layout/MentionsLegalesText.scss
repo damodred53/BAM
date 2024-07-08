@@ -12,3 +12,30 @@
         margin: 0%;
     }
 }
+
+/* Gestion des medias query */
+
+@media(max-width:1100px) {
+
+    .mentions{
+        margin-left: 4rem;
+    }
+}
+
+@media(max-width:600px) {
+
+    .mentions_title {
+        font-size: 22px;
+        letter-spacing: 10px;
+    }
+
+    .mentions_subtitle {
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+
+    .mentions_paragraph {
+        font-size: 16px;
+    }
+    
+}

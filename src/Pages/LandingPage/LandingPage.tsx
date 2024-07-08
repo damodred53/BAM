@@ -84,7 +84,7 @@ const LandingPage = () => {
                     
                     
                 </div>
-                
+                <Vitrine />
                 <SecondTitle textContent="A vot’service !!" />
 
                 <div className="article">
@@ -95,7 +95,6 @@ const LandingPage = () => {
 
                 <blockquote className="landingpage_quote centerflex">
                         <p> “BAM : la bière est artisanale, la brasserie est associative” </p>
-                        <cite> - Cédric Soufflet - </cite>
                 </blockquote>
 
                 <span id="contact">

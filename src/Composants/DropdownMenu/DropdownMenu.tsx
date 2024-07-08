@@ -44,8 +44,8 @@ const [isDisplayActivated, setIsDisplayActivated] = useState(false)
             </div>
             {image ? 
                 <div className="imageMainDiv">
-                    <div className="imageMainDiv_div">
-                        <p className="imageMainDiv_div_paragraph">Venez découvrir l’Instragram de la BAM </p>
+                    <div className="imageMainDiv_div" title="page Instagram encore en construction">
+                        <p className="imageMainDiv_div_paragraph" >Venez découvrir l’Instragram de la BAM </p>
                         <a href="" className="imageMainDiv_div_link">
                             <img className="imageMainDiv_div_link_picture" src={InstagramLogo} />
                         </a>

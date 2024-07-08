@@ -9,34 +9,27 @@ const NatureProgres = () => {
                 <h2 className="nature_title"> LA BAM EST DIURÉTIQUE ET BONNE POUR LA PLANETE</h2>
                 <div className="nature_div">
                     <img className="nature_div_picture" src={NatureProgresLogo}/>
-                    <p className="nature_div_paragraph">
-                        Nature et Progrès est une association de 
-                        consommateurs, d'agriculteurs producteurs et 
-                        d'artisans transformateurs fondée en 1964.
-                        Elle est l'acteur historique de la promotion 
-                        du développement de l'agrobiologie en France et en Belgique.
-                    </p>
+                    
                 </div>
 
-                <div className="nature_div_2">
-                    <div className="nature_div_2_environnement">
-                        <h3 className="nature_div_2_environnement_title">ENVIRONNEMENT</h3>
-                        <p className="nature_div_2_environnement_paragraph">
-                            L'étiquette indique que les produits répondent aux exigences de l'agriculture biologique. 
-                            La charte de Nature et Progrès définit en outre un ensemble de règles plus strictes concernant l'utilisation de la biodiversité, 
-                            la saisonnalité, le bien-être animal, à chaîne courte et l'utilisation des ressources.
-                            Un nombre de substances nocives sont interdites lors de la production. 
-                            Les produits doivent être biodégradables.
-                        </p>
-                    </div>
-                    <div className="nature_div_2_social">
-                        <h3 className="nature_div_2_social_title">SOCIAL</h3>
-                        <p className="nature_div_2_social_paragraph">
-                            La charte de Nature et Progrès impose un certain nombre de critères en termes 
-                            de transparence, solidarité, diffusion des connaissances et financement éthique de l'entreprise.
-                        </p>
-                    </div>
+                <div className="nature_new_div">
+                    <h3 className="nature_new_div_title">C’est pas faut ! </h3>
+                    <p className="nature_new_div_paragraph">Nous sommes en accord avec pleins de Grands Sujets Planétaires et travaillons sur des réponses locales propres à notre activité : </p>
+                        
+                    <ul className="nature_new_div_list">
+                        <li className="nature_new_div_list_element">Filères courtes (en achat et vente : vers le 100 % Mayenne)</li>
+                        <li className="nature_new_div_list_element">Bio à 100 % et sans OGM</li>
+                        <li className="nature_new_div_list_element">Zéro déchets (récup  des emballages en état, consignes des bouteilles 75 cl et 33cl et réemploi)</li>
+                        <li className="nature_new_div_list_element">Anti-gaspi</li>
+                        <li className="nature_new_div_list_element">Démocratie (en SCIC : 1personne = 1 voix)</li>
+                        <li className="nature_new_div_list_element">Coopération avec d’autres brasseries et d’autres entreprises.</li>
+                        <li className="nature_new_div_list_element">Education populaire</li>
+                    </ul>
+                        
+                    <p >La mention Nature et Progrès valide notre démarche et nous fait progresser. <br/>Tout est bien présenté ci-dessous : <a  href="https://natureetprogres.org/?Mention"><p className="link">En savoir plus sur le label</p></a></p>
+                    
                 </div>
+
             </div>
             
     )

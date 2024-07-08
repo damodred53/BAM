@@ -1,26 +1,44 @@
-
-.second_column {
-    @include classicalDisplayflexRow;
+.vitrine_second_column{
+    position: absolute;
+right: 0;
     width: 75%;
-    margin-bottom: -1rem;
-    margin-right: -1rem;
+}
+.second_column {
+
+    
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: center;
+    position: relative;
+    right: 4rem;
+    top: 8rem;
 
     &_span {
-        @include displayflexColumn;
-        min-width : 10%;
-        padding-bottom: 2.5rem;
+        width : 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &_container {
+        @include displayFlexGoogleMap;
     }
     &_title {
         font-size: 18px;
+        text-wrap: nowrap;
     }
     &_logo {
         width: 5rem;
         cursor: pointer;
+        z-index: 2;
     }
 
     &_cursor {
-        width: 2rem;
-        margin-left: 3.5rem
+        width: 3rem;
+        margin-left: 4.5rem;
+        margin-top: 2rem;
+        padding-right: 1rem
     }
 
     &_presentation {
@@ -29,6 +47,7 @@
         border: $colorBorderPresentation 2px solid;
         border-radius: 20px;
         padding-left: 1rem;
+        margin-top: 1rem;
         width: 70%;
         color: $colorWhiteWriting;
         &_paragraph {
@@ -40,4 +59,11 @@
             margin-right: 1.5rem;
         }
     }
+}
+
+@media (max-width:1950px) {
+    .vitrine_second_column {
+        height: 45rem;
+    }
+    
 }
