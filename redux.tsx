@@ -11,9 +11,7 @@ const dataSlice = createSlice({
     initialState: initialDataState,
     reducers : {
         addData: (state, action) => {
-            
             state.data = action.payload;
-            console.log(state.data);
         },
         getData : (state) => {
             return state;
@@ -23,7 +21,7 @@ const dataSlice = createSlice({
 
 const presentationSlice = createSlice({
     name: "presentation",
-    initialState: { visiblePresentationId: null },
+    initialState: { visiblePresentationId: 'null' },
     reducers: {
         setVisiblePresentation: (state, action) => {
             state.visiblePresentationId = action.payload;

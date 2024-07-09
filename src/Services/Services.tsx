@@ -4,8 +4,6 @@ const handleDisplayPresentation = () => {
     let eachPresentation : NodeListOf<HTMLElement>;
     try {
          eachPresentation = document.querySelectorAll('.presentation');
-         console.log("Voici ma longueur de liste : ", eachPresentation.length);
-        console.log(eachPresentation);
          if (eachPresentation.length >= 1) {
             eachPresentation.forEach((presentation) => {
 
@@ -34,6 +32,18 @@ export const fetchDropdownDatas = async () => {
         throw error;
     }
     
+}
+
+export const handleBeerData = async () => {
+
+        try {
+            const response = await fetch("./DataBAM/DataBam.json");
+            const data = await response.json();
+            return data;
+
+        } catch (error) {
+            console.log("Impossible d'aller chercher les données", error);
+        }
 }
 
 

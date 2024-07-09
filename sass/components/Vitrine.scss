@@ -69,27 +69,45 @@
 @media (max-width: 1900px) {
 
     .vitrine {
-        
+        margin-left: 0rem;
         &_picture img {
-            width: 70rem;
-            height: 50rem;
+            width: 75rem;
+            height: 53rem;
+            margin-left: -1rem;
         }
     }
     .vitrine_second_column {
-        top: 62rem
+        top: 62rem;
+        right: 15rem;
+
     }
     .second_column {
-        height: 8rem;  
+        height: 10rem;  
+
+
     }
 
     .first_column {
         height: 8rem;
-        /*width: 100%;*/
         left: 20rem;
+        z-index: 2;
     }
 
     .second_column_presentation {
-        padding: 5rem;
+        padding: 4rem;
+        
+    }
+
+    .first_column_presentation  {
+        padding: 1rem;
+        padding-right: 0px;
     }
     
 }
+
+@media (max-width: 1800px) {
+    .vitrine {
+        display: none;
+    }
+}
+

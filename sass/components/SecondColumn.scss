@@ -1,6 +1,7 @@
 .vitrine_second_column{
     position: absolute;
-right: 0;
+    right: 0;
+    top: 61rem;
     width: 75%;
 }
 .second_column {
@@ -32,6 +33,7 @@ right: 0;
         width: 5rem;
         cursor: pointer;
         z-index: 2;
+        padding: 1rem;
     }
 
     &_cursor {

@@ -11,6 +11,7 @@ import AdresseBlock from "../../Composants/AdresseBlock/AdresseBlock";
 import Footer from "../../Composants/Footer/Footer";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import DataBamZone from "../../Composants/DataBamZone/DataBamZone";
 
 
 const LandingPage = () => {
@@ -84,6 +85,7 @@ const LandingPage = () => {
                     
                     
                 </div>
+                <DataBamZone />
                 <Vitrine />
                 <SecondTitle textContent="A vot’service !!" />
 

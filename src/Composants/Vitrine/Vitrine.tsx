@@ -2,20 +2,26 @@ import { useState, useEffect } from "react";
 import CardFirstColumn from "../CardFirstColumn/CardFirstColumn";
 import PhotoVitrine from "../../assets/photo_vitrine.png";
 import CardSecondColumn from "../CardSecondColumn/CardSecondColumn";
+import { handleBeerData } from "../../Services/Services";
 
-
+// Définir le type des données
+interface BeerData {
+    id: number;
+    name: string;
+    presentation: string;
+}
 
 const Vitrine = () => {
-    const [dataBam, setDataBam] = useState([]);
+    const [dataBam, setDataBam] = useState<BeerData[]>([]);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("./DataBAM/DataBam.json");
-                const data = await response.json();
+                const response = await handleBeerData();
+                const data = await response;
                 setDataBam(data);
             } catch (error) {
-                console.log("Impossible d'aller chercher les données", error);
+                console.error("Erreur lors de la récupération des données :", error);
             }
         };
 
@@ -38,7 +44,6 @@ const Vitrine = () => {
                     cardBam.id >= 7 ? <CardSecondColumn key={cardBam.id} id={cardBam.id} name={cardBam.name} presentation={cardBam.presentation} /> : null
                 ))}
             </div>
-            
         </section>
     );
 };

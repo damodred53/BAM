@@ -40,3 +40,22 @@
                     </div>
                 </div>
 */
+
+
+
+/* 
+
+{beerData.map((beer) => {
+                switch (true) { 
+                    case beer.id <4 :
+                        return <div className="section_beer_first"><DisplayDataBam key={beer.id} name={beer.name} id={beer.id} presentation={beer.presentation} /></div>
+                    case beer.id<8 :
+                        return <div className="section_beer_second"><DisplayDataBam key={beer.id} name={beer.name} id={beer.id} presentation={beer.presentation} /></div>
+                    case beer.id<11 :
+                        return <div className="section_beer_third"><DisplayDataBam key={beer.id} name={beer.name} id={beer.id} presentation={beer.presentation} /></div>
+                    default:
+                        return null;
+                }
+                    
+                
+            })}*/
