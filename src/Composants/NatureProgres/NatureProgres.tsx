@@ -13,7 +13,7 @@ const NatureProgres = () => {
                 </div>
 
                 <div className="nature_new_div">
-                    <h3 className="nature_new_div_title">C’est pas faut ! </h3>
+                    <h3 className="nature_new_div_title">C’est pas faux ! </h3>
                     <p className="nature_new_div_paragraph">Nous sommes en accord avec pleins de Grands Sujets Planétaires et travaillons sur des réponses locales propres à notre activité : </p>
                         
                     <ul className="nature_new_div_list">

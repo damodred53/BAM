@@ -42,10 +42,6 @@ const DataBamZone = () => {
 
   }, [beerData]);
 
-  console.log('le groupe 1 : ', group1)
-  console.log('le groupe 2 : ',group2)
-  console.log('le groupe 3 : ',group3)
-  console.log('le groupe 4 : ',group4)
 
   return (
     <section>

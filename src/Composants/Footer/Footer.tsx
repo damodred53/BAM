@@ -1,6 +1,6 @@
 
 import logoNoir from "../../assets/LogoBam/Stout.webp";
-import NatureProgres from "../../assets/natureEtProgres.svg";
+import NatureProgres from "../../assets/nature_progres.png";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {

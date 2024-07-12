@@ -8,6 +8,8 @@
     &_title {
         font-size: 34px;
         margin-bottom: 6rem;
+        letter-spacing: 10px;
+        text-align: center;
     }
 
     &_div {
@@ -29,13 +31,19 @@
 
         &_title {
             text-transform: uppercase;
-            letter-spacing: 5px;
+            letter-spacing: 10px;
+            text-align: center;
+            margin-bottom: 4rem;
         }
 
         a {
             
             color: $colorWhiteWriting;
             text-decoration: none;
+        }
+
+        &_list {
+            line-height: 50px;
         }
 
        
@@ -97,6 +105,38 @@
     }
 
     
+}
+
+
+/* gestion des medias queries */
+
+
+@media (max-width:1700px) {
+
+    .nature_new_div {
+        padding: 5rem;
+    }
+}
+
+@media (max-width:900px) {
+
+    .nature_new_div {
+        font-size: 22px;
+        
+        &_list {
+
+
+            line-height: 30px;
+        }
+    }
+}
+
+@media (max-width:700px) {
+
+    .nature_new_div {
+        font-size: 18px;
+        
+    }
 }
 
 

@@ -1,12 +1,16 @@
  .main_display {
 
-    @include displayFlexGoogleMap;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+    display: none;
  }
  .display {
 
     width: 70%;
-
+    margin-bottom: 5rem;
 
     &_upperpart {
 
@@ -20,13 +24,23 @@
             align-items: center;
             width: 33%;
             row-gap: 2rem;
+            
             &_picture {
-                width: 8rem;
+                width: 12rem;
+                cursor: pointer;
+                transition: 0.5s;
                 
             }
 
+            &_picture:hover {
+
+                transform: scale(1.1);
+            }
+
             &_cursor {
-                width: 4rem
+                width: 4rem;
+                transform : rotate(-90deg);
+                display: none;
             }
         }
     }
@@ -36,9 +50,89 @@
         background-color: $colorBackgroundCard;
         border-radius: 25px;
         margin-top: 1rem;
+        position: relative;
+        height: 15rem;
         img {
-            width: 10rem;
+            width: 12rem;
             opacity: 0.2;
+            position: absolute;
+            top: 10%;
+            right: 42%;
+        }
+
+        &_text {
+            @include displayFlexGoogleMap;
+            width: 100%;
+            
+            color: white;
+            font-size: 30px;
+            padding-left: 5rem;
+            padding-right: 5rem;
         }
     }
  }
+
+/* gestion des medias query */
+
+ @media (max-width: 1800px) {
+    .main_display {
+        display: flex;
+    }
+}
+
+@media (max-width:1500px) {
+    .display_paragraph_text {
+        font-size: 24px;
+    }
+
+    .display_paragraph {
+        img {
+            right: 38%;
+        }
+    }
+}
+
+@media(max-width:1050px) {
+
+    .display_upperpart_icons_picture{
+        width:8rem;
+    }
+
+    .display_paragraph {
+        height: 12rem;
+        
+        &_text {
+            font-size: 18px;
+            padding: 1rem;
+        }
+
+        img {
+            width: 9rem;
+            right: 40%;
+        }
+    }
+}
+
+@media (max-width:700px) {
+
+    .display_upperpart_icons_picture{
+        width:6rem;
+    } 
+
+    .display_paragraph {
+
+        img {
+            right: 35%;
+        }
+    }
+
+    .display_paragraph_text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:500px) {
+    .display_paragraph_text {
+        font-size: 14px;
+    }
+}

@@ -29,18 +29,18 @@
     }
 
     &_pages {
+        width: 30%;
         
         &_list {
             display: grid;
             line-height: 1.5; 
             grid-template-columns: 1fr 1fr;
-            column-gap: 3rem;
             row-gap: 1rem;
             list-style-type: none;
             font-size: 28px;
             padding: 0%;
             margin-left: -25%;
-            width: 100%;
+            
             
             &_links {
                 color : $colorWhiteWriting;
@@ -48,6 +48,7 @@
                 font-weight: bold;
                 padding: 1rem;
                 display: inline-block;
+                white-space: nowrap;
             }
         }
     }

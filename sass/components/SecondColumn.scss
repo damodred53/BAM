@@ -6,7 +6,6 @@
 }
 .second_column {
 
-    
     display: flex;
     flex-wrap: nowrap;
     align-content: stretch;
@@ -16,10 +15,12 @@
     top: 8rem;
 
     &_span {
-        width : 8%;
+        width : 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+
     }
 
     &_container {
@@ -34,9 +35,15 @@
         cursor: pointer;
         z-index: 2;
         padding: 1rem;
+        transition: 0.5s ;
+    }
+
+    &_logo:hover {
+        transform: scale(1.2);
     }
 
     &_cursor {
+        display: none;
         width: 3rem;
         margin-left: 4.5rem;
         margin-top: 2rem;
@@ -50,10 +57,13 @@
         border-radius: 20px;
         padding-left: 1rem;
         margin-top: 1rem;
-        width: 70%;
+        max-width: 70%;
+
+
         color: $colorWhiteWriting;
         &_paragraph {
-            padding: 1.5rem;
+            padding-right: 1rem;
+            font-size: 22px;
         }
 
         &_logo {

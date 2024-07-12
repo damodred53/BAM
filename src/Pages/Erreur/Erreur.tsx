@@ -4,9 +4,12 @@ import NavBar from "../../Composants/NavBar/NavBar";
 const Erreur = () => {
 
     return (
-        <div>
+        <div className="main_erreur">
+            
             <NavBar />
-            <h1 className="erreur">Ceci est la page d'erreur de la BAM</h1>
+            
+            
+            <h1 className="erreur">Ceci est la page d'erreur de la BAM, bravo de l'avoir trouvé. <br/> Mais en gros la page que vous recherchez n'exite pas !!</h1>
             <Footer />
         </div>
     )
