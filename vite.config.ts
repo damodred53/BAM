@@ -10,6 +10,8 @@ export default defineConfig({
       algorithm: 'brotliCompress', // Spécifie l'algorithme de compression
       ext: '.br', // Extension de fichier pour les fichiers compressés
       verbose: true, // Afficher les informations détaillées sur la compression
+
+      
     }),
   ],
   base: "/BAM", // Base URL de votre application
