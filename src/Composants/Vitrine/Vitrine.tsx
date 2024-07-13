@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import CardFirstColumn from "../CardFirstColumn/CardFirstColumn";
-import PhotoVitrine from "../../assets/photo_vitrine.png";
+import PhotoVitrine from "../../assets/photo_vitrine.webp";
 import CardSecondColumn from "../CardSecondColumn/CardSecondColumn";
 import { handleBeerData } from "../../Services/Services";
 

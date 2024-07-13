@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 import { store } from "../../../redux";
 import SecondTitle from "../../Composants/SecondTitle/SecondTitle";
 import CardLandingPage from "../../Composants/CardLandingPage/CardLandingPage";
-import Biere from "../../assets/beer.svg";
+import Biere from "../../assets/beer.webp";
 import AdresseBlock from "../../Composants/AdresseBlock/AdresseBlock";
 import Footer from "../../Composants/Footer/Footer";
 import { useLocation } from "react-router-dom";

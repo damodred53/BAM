@@ -1,7 +1,7 @@
 
 import { NavLink } from "react-router-dom"
-import BurgerMenu from "../../assets/white_menu.svg"
-import LogoBam  from "../../assets/logo_navbar.png"
+import BurgerMenu from "../../assets/white_menu.webp"
+import LogoBam  from "../../assets/logo_navbar.webp"
 import { useState } from "react";
 
 
@@ -24,8 +24,8 @@ const NavBar = () => {
                     <img className="navBar_logo" src={LogoBam}/>
                     <div className="navBar_pages">
                         <ul className="navBar_pages_list">
-                            <li><NavLink className="navBar_pages_list_links" to="/" >La BAM en <br/> quelques mots</NavLink></li>
-                            <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de <br/> mots</NavLink></li>
+                            <li><NavLink className="navBar_pages_list_links" to="/" >La BAM en quelques mots</NavLink></li>
+                            <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de mots</NavLink></li>
                             <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
                         </ul>
                     </div>
@@ -47,8 +47,8 @@ const NavBar = () => {
                     <img className="navBar_logo" src={LogoBam}/>
                     <div className="navBar_pages">
                         <ul className="navBar_pages_list">
-                            <li><NavLink className="navBar_pages_list_links" to="/" >La BAM en <br/> quelques mots</NavLink></li>
-                            <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de <br/> mots</NavLink></li>
+                            <li><NavLink className="navBar_pages_list_links" to="/" >La BAM en quelques mots</NavLink></li>
+                            <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de mots</NavLink></li>
                             <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
                         </ul>
                     </div>
@@ -65,7 +65,7 @@ const NavBar = () => {
                 }
 
                 <div className="navBar_menu">
-                    <img className="navBar_menu_picture" onClick={handleDisplayHeader}  src={BurgerMenu}/>
+                    <img className="navBar_menu_picture" onClick={handleDisplayHeader} title="cliquez pour renvoyer en haut le menu de navigation recliquez pour le rappeler" src={BurgerMenu} />
                 </div>
             
         </div>

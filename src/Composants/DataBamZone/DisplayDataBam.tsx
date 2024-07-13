@@ -1,4 +1,4 @@
-import verticalCursor from "../../assets/vertical_cursor.svg";
+import verticalCursor from "../../assets/vertical_cursor.webp";
 import Blanche from "../../assets/LogoBam/Blanche.webp";
 import Ambrée from "../../assets/LogoBam/Ambrée.webp";
 import Blonde from "../../assets/LogoBam/Blonde.webp";
@@ -10,7 +10,7 @@ import Mars from "../../assets/LogoBam/Mars.webp";
 import Poussin from "../../assets/LogoBam/Poussin.webp";
 import Noel from "../../assets/LogoBam/Noël.webp";
 import Cervoise from "../../assets/LogoBam/Cervoise.webp";
-import Curseur from "../../assets/darkArrow.png";
+import Curseur from "../../assets/darkArrow.webp";
 import { useState} from "react";
 
 

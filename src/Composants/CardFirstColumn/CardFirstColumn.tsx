@@ -6,7 +6,7 @@ import Blonde from "../../assets/LogoBam/Blonde.webp";
 import Brune from "../../assets/LogoBam/Brune.webp";
 import Terroir from "../../assets/LogoBam/Terroir.webp";
 import Masquée from "../../assets/LogoBam/Masquée.webp";
-import Cursor from "../../assets/darkArrow.png";
+import Cursor from "../../assets/darkArrow.webp";
 import { setVisiblePresentation } from "../../../redux";
 import { useRef } from "react";
 

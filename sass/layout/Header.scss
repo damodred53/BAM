@@ -1,8 +1,8 @@
 .main_navbar {
     display: flex;
     flex-direction: column;
-    
 }
+
 .navBar {
     @include displayflexRow;
     background-color: rgba($color: #000000, $alpha: 0.6);
@@ -25,11 +25,10 @@
         height: 80%;
         margin-left: -5%;
         margin-right: 5rem;
-        
     }
 
     &_pages {
-        width: 30%;
+        width: 25%;
         
         &_list {
             display: grid;
@@ -39,8 +38,7 @@
             list-style-type: none;
             font-size: 28px;
             padding: 0%;
-            margin-left: -25%;
-            
+            margin-left: -45%;
             
             &_links {
                 color : $colorWhiteWriting;
@@ -92,18 +90,18 @@
 /* Gestion des medias queries */
 
 
-@media (max-width: 1650px) {
+@media (max-width: 1850px) {
 
     .navBar_title {
         font-size: 1.8rem;
     }
 
     .navBar_pages_list {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1580px) {
 
     .navBar_title {
        max-width: 20%;
@@ -118,7 +116,7 @@
     }
 
     .navBar_pages_list {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
@@ -127,18 +125,49 @@
     .navBar_title {
        max-width: 15%;
        margin: 0%;
-       font-size: 1.5rem;
+       margin-left: -5rem;
+       font-size: 2rem;
     }
+
+    .navBar_pages_list {
+        font-size: 18px;
+    }
+
+    .navBar_logo {
+        min-width: 14%;
+        height: 60%;
+        margin-left: -12rem;
+    }
+
+    .navBar_pages {
+        margin-left: -8rem;
+    }
+
+    .navBar_title {
+        max-width: 15%;
+        margin: 0%;
+        margin-left: -8rem;
+        font-size: 2rem;
+     }
 
     
 }
 
 @media (max-width: 1060px) {
 
-    .navBar_pages_list {
-       margin-left: -18%;
+    .navBar_title{
+        font-size: 1.8rem;
     }
 
+    .navBar_logo {
+        min-width: 12%;
+        height: 50%;
+        margin-left: -20rem;
+    }
+
+    .navBar_pages {
+        margin-left: -15rem;
+    }
     
 }
 
@@ -165,7 +194,7 @@
 
     .navBar_logo {
        margin-left: 3rem;
-       width: 20%;
+       min-width: 20%;
        height: 60%;
     }
 
@@ -215,13 +244,13 @@
         font-size: 14px;
     }
 
-    .navBar_title {
+    /*.navBar_title {
         font-size: 1.3rem; 
-    }
+    }*/
 
     .navBar_logo {
-        width: 30%;
-        margin-left: 1.5rem;
+        min-width: 25%;
+        margin-left: 0.5rem;
     }
 
     .hidden_menu_navBar_pages_list {

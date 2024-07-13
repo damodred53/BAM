@@ -53,13 +53,13 @@
 .link {
     transition: 0.5s;
     width: fit-content;
-    
+    text-decoration: underline;
 }
 
 .link:hover {
 
     transform: scale(1.1);
-    text-decoration: underline;
+    
 }
 
 
@@ -124,8 +124,6 @@
         font-size: 22px;
         
         &_list {
-
-
             line-height: 30px;
         }
     }

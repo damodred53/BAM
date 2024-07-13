@@ -1,8 +1,8 @@
 import React from "react";
-import Cursor from "../../assets/cursor.svg";
+import Cursor from "../../assets/cursor.webp";
 import { useRef, useState } from "react";
-import InstagramLogo from "../../assets/InstagramLogo.svg";
-import MayenneLogo from "../../assets/bougerMayenne.png";
+import InstagramLogo from "../../assets/InstagramLogo.webp";
+import MayenneLogo from "../../assets/bougerMayenne.webp";
 
 interface DropdownMenuProps {
     paragraphe: string;

@@ -1,5 +1,5 @@
 
-import NatureProgresLogo from "../../assets/nature_et_progres.svg";
+import NatureProgresLogo from "../../assets/nature_et_progres.webp";
 
 const NatureProgres = () => {
 
@@ -22,11 +22,11 @@ const NatureProgres = () => {
                         <li className="nature_new_div_list_element">Zéro déchets (récup  des emballages en état, consignes des bouteilles 75 cl et 33cl et réemploi)</li>
                         <li className="nature_new_div_list_element">Anti-gaspi</li>
                         <li className="nature_new_div_list_element">Démocratie (en SCIC : 1personne = 1 voix)</li>
-                        <li className="nature_new_div_list_element">Coopération avec d’autres brasseries et d’autres entreprises.</li>
+                        <li className="nature_new_div_list_element">Coopération avec d’autres brasseries et d’autres entreprises.</li>s
                         <li className="nature_new_div_list_element">Education populaire</li>
                     </ul>
                         
-                    <p >La mention Nature et Progrès valide notre démarche et nous fait progresser. <br/>Tout est bien présenté ci-dessous : <a  href="https://natureetprogres.org/?Mention"><p className="link">En savoir plus sur le label</p></a></p>
+                    <p >La mention Nature et Progrès valide notre démarche et nous fait progresser. <br/>Tout est bien présenté ci-dessous : <a target="_blank" href="https://natureetprogres.org/?Mention"><p className="link">Aller sur le site officiel</p></a></p>
                     
                 </div>
 

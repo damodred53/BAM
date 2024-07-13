@@ -47,10 +47,10 @@
 @media (max-width:2080px) {
     .vitrine {
         
-        &_picture img {
+        /*&_picture img {
             width: 75rem;
             height: 60rem;
-        }
+        }*/
     }
 }
 
@@ -60,7 +60,6 @@
         
         &_picture img {
             width: 70rem;
-            /*height: 50rem;*/
         }
     }
     
@@ -71,7 +70,7 @@
     .vitrine {
         margin-left: 0rem;
         &_picture img {
-            width: 75rem;
+
             height: 53rem;
             margin-left: -1rem;
         }

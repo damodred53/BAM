@@ -1,5 +1,5 @@
 
-import BigPicture from "..//../assets/big_header_picture.png";
+import BigPicture from "..//../assets/big_header_picture.webp";
 
 const BigHeaderPicture = () => {
 

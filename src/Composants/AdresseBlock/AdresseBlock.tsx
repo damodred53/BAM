@@ -1,8 +1,8 @@
 
-import Curseur from "../../assets/Curseur.png";
-import Enveloppe from "../../assets/enveloppe.svg";
-import Telephone from "../../assets/Telephone.png";
-import imageBam from "../../assets/Essai_BAM.png";
+import Curseur from "../../assets/Curseur.webp";
+import Enveloppe from "../../assets/enveloppe.webp";
+import Telephone from "../../assets/Telephone.webp";
+import imageBam from "../../assets/Essai_BAM.webp";
 import { useState } from "react";
 
 

@@ -1,6 +1,6 @@
 
 import NavBar from "../../Composants/NavBar/NavBar";
-import PictureDescription from "../../assets/pictureDescription.png";
+import PictureDescription from "../../assets/pictureDescription.webp";
 import BigHeaderDescription from "../../Composants/BigPictureDescription/BigPictureDescription";
 import Footer from "../../Composants/Footer/Footer";
 import DroppingMenusPart from "../../Composants/DroppingMenusPart/DroppingMenusPart";
