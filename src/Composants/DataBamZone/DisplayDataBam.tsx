@@ -1,4 +1,4 @@
-import verticalCursor from "../../assets/vertical_cursor.webp";
+
 import Blanche from "../../assets/LogoBam/Blanche.webp";
 import Ambrée from "../../assets/LogoBam/Ambrée.webp";
 import Blonde from "../../assets/LogoBam/Blonde.webp";
@@ -33,7 +33,7 @@ beers.forEach((beer) => {
 })
 
 /*console.log(logoToDisplay);*/
-const handleClick = (e, beers:number, presentation:string) => {
+const handleClick = (e, presentation) => {
 
     e.preventDefault();
     setTextToDisplay(presentation);
@@ -45,15 +45,15 @@ const handleClick = (e, beers:number, presentation:string) => {
         <div className="display_upperpart">
         
                 <div className="display_upperpart_icons">
-                    <img className="display_upperpart_icons_picture" onClick={(e)=> handleClick(e, beers[0]?.id, beers[0]?.presentation)} src={logoToDisplay[0]}/>
+                    <img className="display_upperpart_icons_picture" onClick={(e)=> handleClick(e,  beers[0]?.presentation)} src={logoToDisplay[0]}/>
                     <img className="display_upperpart_icons_cursor" src={Curseur} />
                 </div>
                 <div className="display_upperpart_icons">
-                    <img className="display_upperpart_icons_picture" onClick={(e)=> handleClick(e, beers[1]?.id, beers[1]?.presentation)} src={logoToDisplay[1]} />
+                    <img className="display_upperpart_icons_picture" onClick={(e)=> handleClick(e,  beers[1]?.presentation)} src={logoToDisplay[1]} />
                     <img className="display_upperpart_icons_cursor" src={Curseur} />
                 </div>
                 <div className="display_upperpart_icons">
-                    <img className="display_upperpart_icons_picture" onClick={(e)=> handleClick(e, beers[2]?.id, beers[2]?.presentation)} src={logoToDisplay[2]} />
+                    <img className="display_upperpart_icons_picture" onClick={(e)=> handleClick(e,  beers[2]?.presentation)} src={logoToDisplay[2]} />
                     {beers[2]?.id ? <img className="display_upperpart_icons_cursor" src={Curseur} /> : ""}
                 </div>
             

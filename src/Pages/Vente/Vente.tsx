@@ -7,6 +7,7 @@ import GoogleMap from "../../Composants/GoogleMap";
 import BigHeaderDescription from "../../Composants/BigPictureDescription/BigPictureDescription";
 import Entrepot from "../../assets/entrepot.webp";
 
+
 const Vente = () => {
 
    

@@ -51,7 +51,7 @@ const LandingPage = () => {
                             <p>
                                 <strong className="landingpage_texte_presentation_strong"> - Brasserie:</strong> Depuis 2009, on brasse de la bière à Montflours en Mayenne (53). 
                                 D’abord sur le champ du brassage amateur, puis en véritable activité économique avec deux salariés. 
-                                Que ce soit en fermentation haute ou basse, en brassage mono- ou multipaliers, blondes, ambrées ou brunes 
+                                Que ce soit en fermentation haute ou basse, en brassage mono- ou multipaliers, blondes, ambrées ou brunes 
                                 sortent des cuves de la BAM. Une production aujourd’hui de 400 hl/an entre recettes 
                                 ayant fait leurs preuves et expérimentations, mais toujours à base de matières premières issues de 
                                 l’agriculture biologique. La labellisation Nature et Progrès vient renforcer cet engagement, en adéquation également

@@ -1,6 +1,6 @@
 
-const GoogleMap = () => {
 
+const GoogleMap = () => {
 
 
     return (

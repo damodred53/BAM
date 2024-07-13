@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { fetchDropdownDatas } from "../../Services/Services.tsx";
 import { useDispatch } from "react-redux";
 import {addData} from "../../../redux";
@@ -7,7 +7,7 @@ import Mapping from "./Mapping.tsx";
 
 const DroppingMenusPart = () => {
 
-    const [data, setData] = useState([]);
+
     const dispatch = useDispatch();
 
     useEffect( () => {
@@ -16,15 +16,13 @@ const DroppingMenusPart = () => {
 
             const response = fetchDropdownDatas();
             const data = await response;
-            setData(data);
-            console.log(data); 
-             
+            dispatch(addData(data));
         }
         getData();
         
         }, [dispatch]);
 
-        dispatch(addData( data));
+        
 
     return (
         <div className="menus_part">

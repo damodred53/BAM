@@ -30,7 +30,7 @@ const Vitrine = () => {
 
     return (
         <section className="vitrine">
-            <h1 className="vitrine_main_title">HONNEUR AUX BAM !!</h1>
+            <h1 className="vitrine_main_title">HONNEUR AUX BAMS !!</h1>
             <div className="vitrine_first_column">
                 {dataBam.map((cardBam) => (
                     cardBam.id <= 6 ? <CardFirstColumn key={cardBam.id} id={cardBam.id} name={cardBam.name} presentation={cardBam.presentation} /> : null
