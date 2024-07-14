@@ -14,6 +14,7 @@ const dataSlice = createSlice({
             state.data = action.payload;
         },
         getData : (state) => {
+            
             return state;
         }
     }

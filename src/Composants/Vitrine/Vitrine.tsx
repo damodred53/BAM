@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 import CardFirstColumn from "../CardFirstColumn/CardFirstColumn";
 import PhotoVitrine from "../../assets/photo_vitrine.webp";
 import CardSecondColumn from "../CardSecondColumn/CardSecondColumn";
-import { handleBeerData } from "../../Services/Services";
+import { fetchDropdownDatas, handleBeerData } from "../../Services/Services";
+import { useDispatch } from "react-redux";
+import {addData} from "../../../redux";
 
 // Définir le type des données
 interface BeerData {
@@ -13,17 +15,36 @@ interface BeerData {
 
 const Vitrine = () => {
     const [dataBam, setDataBam] = useState<BeerData[]>([]);
+    const dispatch = useDispatch();
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await handleBeerData();
+                console.log(response)
                 const data = await response;
                 setDataBam(data);
             } catch (error) {
                 console.error("Erreur lors de la récupération des données :", error);
             }
         };
+
+
+        const fetchData2 = async () => {
+            try {
+                
+                    const response = await fetchDropdownDatas();
+                    const data = await response;
+                    console.log(data);
+                    dispatch(addData(data));
+                    /*setDatas(data);*/
+                }
+                catch (error) {
+                    console.log("impossible d'aller chercher les données des menus déroulants", error);
+                }
+            } 
+            
+            fetchData2();
 
         fetchData();
     }, []);

@@ -1,11 +1,14 @@
 
+
 import { useSelector } from "react-redux";
 import DropdownMenu from "../DropdownMenu/DropdownMenu.tsx";
 
+
 const Mapping = () => {
 
-    // @ts-expect-error Pour le moment, impossible de comprendre cette erreur de typescript
+     //@ts-expect-error Pour le moment, impossible de comprendre cette erreur de typescript
     const data = useSelector((state) => state.dataDropDown.data);
+
 
     return (
 

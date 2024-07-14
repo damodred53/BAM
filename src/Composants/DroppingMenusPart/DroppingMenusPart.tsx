@@ -1,28 +1,42 @@
 
-import { useEffect } from "react";
-import { fetchDropdownDatas } from "../../Services/Services.tsx";
-import { useDispatch } from "react-redux";
-import {addData} from "../../../redux";
+
 import Mapping from "./Mapping.tsx";
 
 const DroppingMenusPart = () => {
 
+    /*const [datas, setDatas] = useState([]);*/
+    /*const dispatch = useDispatch();*/
 
-    const dispatch = useDispatch();
-
-    useEffect( () => {
+    /*useEffect(() => {
 
         const getData = async () => {
 
-            const response = fetchDropdownDatas();
+            const response = await fetchDropdownDatas();
             const data = await response;
             dispatch(addData(data));
         }
         getData();
         
-        }, [dispatch]);
-
+        }, [dispatch]);*/
         
+
+        /*useEffect(() => {
+
+            const fetchData = async () => {
+            try {
+                    const response = await fetchDropdownDatas();
+                    const data = await response;
+                    setDatas(data);
+                }
+                catch (error) {
+                    console.log("impossible d'aller chercher les données des menus déroulants", error);
+                }
+            } 
+            
+            fetchData();
+        }, []);*/
+
+  
 
     return (
         <div className="menus_part">

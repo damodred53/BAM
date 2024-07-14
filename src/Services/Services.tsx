@@ -24,6 +24,7 @@ export const fetchDropdownDatas = async () => {
 
     try {
         const result = await fetch("./DataBAM/dropdownData.json");
+        
         const data = await result.json();
 
         return data;
