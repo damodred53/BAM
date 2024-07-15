@@ -15,7 +15,6 @@ const NavBar = () => {
 
     return (
 
-        
         <div >
             {isHeaderVisible ? 
             
@@ -31,11 +30,11 @@ const NavBar = () => {
                     </div>
                     <div className="hidden_menu">
                         
-                            <ul className="hidden_menu_navBar_pages_list">
-                                <li><NavLink className="navBar_pages_list_links" to="/BAM/" >La BAM en <br/> quelques mots</NavLink></li>
-                                <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de <br/> mots</NavLink></li>
-                                <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
-                            </ul>
+                        <ul className="hidden_menu_navBar_pages_list">
+                            <li><NavLink className="navBar_pages_list_links" to="/BAM/" >La BAM en <br/> quelques mots</NavLink></li>
+                            <li><NavLink className="navBar_pages_list_links" to="/description">La BAM en plus de <br/> mots</NavLink></li>
+                            <li><NavLink className="navBar_pages_list_links" to="/vente">Une urgence BAM ?</NavLink></li>
+                        </ul>
                         
                     </div>
                 </div> 

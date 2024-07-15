@@ -136,3 +136,15 @@
         font-size: 14px;
     }
 }
+
+@media (max-width:420px) {
+    .display_upperpart_icons_picture {
+        width: 80%;
+    }
+
+    .display_paragraph {
+        img {
+            right: 25%;
+        }
+    }
+}

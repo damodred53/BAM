@@ -274,12 +274,12 @@
 
     .navBar {
         padding-top: 2rem;
-        height: 300px!important;
+        height: 300px;
         padding-left: 3rem;
     }
     .navBar_absolute {
         padding-top: 2rem;
-        height: 300px!important;
+        height: 300px;
         padding-left: 3rem;
     }
     .navBar_menu {
@@ -291,5 +291,43 @@
     .navBar_title {
         font-size: 1rem; 
         width: 25%;
+    }
+}
+
+
+
+@media (max-width:420px) {
+
+
+    .navBar  {
+        height: 250px;
+    }
+    .navBar_absolute {
+        height: 250px!important;
+    }
+
+    .navBar_logo {
+        width: 25%;
+        height: 45%;
+        margin-left: 1.5rem;
+    }
+
+    .navBar_menu {
+        width: 1rem;
+        padding: 0.8rem 2.5rem 0.8rem 1rem;
+        margin-right: 0%;
+    }
+
+    .hidden_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+
+    .hidden_menu_navBar_pages_list {
+        padding: 0%;
+        margin: 0%;
     }
 }

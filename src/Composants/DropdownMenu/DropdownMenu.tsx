@@ -33,9 +33,9 @@ const [isDisplayActivated, setIsDisplayActivated] = useState(false)
 
     return (
     <div data-testid="dropdown-1" className="dropdown ">
-        <div className={"dropdown_visible_part"}>
+        <div className={"dropdown_visible_part"} onClick={displayContent}>
             <h2 className="dropdown_visible_part_title">{titre}</h2>
-            <img className={`dropdown_visible_part_cursor ${isDisplayActivated ? "rotation" : ""}`} src={Cursor} alt="curseur" onClick={displayContent}></img>
+            <img className={`dropdown_visible_part_cursor ${isDisplayActivated ? "rotation" : ""}`} src={Cursor} alt="curseur" ></img>
         </div>
     
         <div className={` dropdown_invisible_part ${isDisplayActivated ? "displayed" : ""} custom-scrollbar`}  ref={dropdownContentPart}>

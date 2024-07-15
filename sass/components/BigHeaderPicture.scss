@@ -44,3 +44,11 @@
     }
 }
 }
+
+@media (max-width:420px) {
+    .bigheaderpicture {
+       
+        &_picture {
+            height : 15rem;
+        }
+}}
