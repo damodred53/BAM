@@ -25,11 +25,8 @@ const Vente = () => {
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
-
-                    
                 </p>
-                <p className="vente_paragraph">Une urgence BAM ? n'hésitez pas à nous contacter en cliquant par ici : <Link to="/#contact">contactez-nous</Link></p>
+                <p className="vente_paragraph">Une urgence BAM ? n'hésitez pas à nous contacter en cliquant par ici : <Link to="/BAM/#contact">contactez-nous</Link></p>
             </div>
 
             

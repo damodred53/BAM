@@ -45,8 +45,8 @@ const [isDisplayActivated, setIsDisplayActivated] = useState(false)
             {image ? 
                 <div className="imageMainDiv">
                     <div className="imageMainDiv_div" title="page Instagram encore en construction">
-                        <p className="imageMainDiv_div_paragraph" >Venez découvrir l’Instragram de la BAM </p>
                         <a href="" className="imageMainDiv_div_link">
+                            <p className="imageMainDiv_div_paragraph" >Venez découvrir l’Instragram de la BAM </p>
                             <img className="imageMainDiv_div_link_picture" src={InstagramLogo} />
                         </a>
                     </div>
@@ -54,8 +54,8 @@ const [isDisplayActivated, setIsDisplayActivated] = useState(false)
                     <div className="imageMainDiv_div">
                         <a className="imageMainDiv_div_link" href="https://www.bouger-en-mayenne.com/" target="_blank">
                             <img className="imageMainDiv_div_link_picture2"  src= {MayenneLogo} />
+                            <p className="imageMainDiv_div_paragraph">Pour venir bouger en Mayenne</p>
                         </a>
-                        <p className="imageMainDiv_div_paragraph">Pour venir bouger en Mayenne</p>
                     </div>
                 </div>
                 : ""

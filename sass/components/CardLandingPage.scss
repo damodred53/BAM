@@ -22,7 +22,6 @@
             text-align: center;
             font-size: 25px;
             font-weight: 700;
-
         }
 
         &_paragraph {
@@ -71,8 +70,6 @@
             &_paragraph {
                 font-size: 20px;
             }
-
-            
         }
     }
 
@@ -102,5 +99,11 @@
 
     .article_card:nth-child(2) {
         display: none;
+    }
+}
+
+@media (max-width:375px) {
+    .article_card_subtitle {
+        margin: 1rem;
     }
 }
