@@ -9,9 +9,9 @@ const CardLandingPage: React.FC<CardLandingPageProp> = ({title, content}) => {
     let trueContent = content;
 
     if (typeof content === "string" && content.includes("webp")) {
-        trueContent = <img className="article_card_picture" src={content}></img>;
+        trueContent = <img className="article_card_picture" src={content} alt="image illustrative d'une bière" ></img>;
     } else {
-        trueContent = <><h4 className="article_card_subtitle">{title}</h4><p className="article_card_paragraph">{content}</p></>
+        trueContent = <><h3 className="article_card_subtitle">{title}</h3><p className="article_card_paragraph">{content}</p></>
     }
   
 

@@ -21,7 +21,6 @@ const Vitrine = () => {
         const fetchData = async () => {
             try {
                 const response = await handleBeerData();
-                console.log(response)
                 const data = await response;
                 setDataBam(data);
             } catch (error) {
@@ -35,9 +34,7 @@ const Vitrine = () => {
                 
                     const response = await fetchDropdownDatas();
                     const data = await response;
-                    console.log(data);
                     dispatch(addData(data));
-                    /*setDatas(data);*/
                 }
                 catch (error) {
                     console.log("impossible d'aller chercher les données des menus déroulants", error);

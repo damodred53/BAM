@@ -20,7 +20,7 @@ const NavBar = () => {
             
                 <div className="navBar">
                     <h1 className="navBar_title">Bienvenue à la Brasserie Associative de Montflours</h1>
-                    <img className="navBar_logo" src={LogoBam}/>
+                    <img className="navBar_logo" src={LogoBam} alt="logo de l'entreprise BAM"/>
                     <div className="navBar_pages">
                         <ul className="navBar_pages_list">
                             <li><NavLink className="navBar_pages_list_links" to="/BAM/" >La BAM en quelques mots</NavLink></li>

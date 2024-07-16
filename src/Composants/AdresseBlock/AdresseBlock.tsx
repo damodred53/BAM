@@ -25,14 +25,14 @@ const AdresseBlock = () => {
             <h2 className="adresseBlock_title">CONTACT</h2>
 
             <div className="adresseBlock_maindiv">
-                <img className="adresseBlock_maindiv_picture" src={imageBam}/>
+                <img className="adresseBlock_maindiv_picture" src={imageBam} alt="vue satellite de l'entreprise"/>
                 <div className="adresseBlock_maindiv_subdiv">
-                    <img className="adresseBlock_maindiv_subdiv_logo"  src={Curseur} />
+                    <img className="adresseBlock_maindiv_subdiv_logo"  src={Curseur} alt="curseur" />
                     <p className="adresseBlock_maindiv_subdiv_paragraph">ZA du Mottay Route de Sacé <br/>53240 Montflours</p>
                 </div>
                 <div className="adresseBlock_maindiv_subdiv">
                     <div className="adresseBlock_maindiv_subdiv_under" onClick={handleDisplay}>
-                        <img className="adresseBlock_maindiv_subdiv_under_logo" src={Telephone}/>
+                        <img className="adresseBlock_maindiv_subdiv_under_logo" src={Telephone} alt="icone de téléphone" />
                         {!telephoneNumberDisplay ?
                             <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub">Cliquez pour voir</p>
                             :
@@ -41,7 +41,7 @@ const AdresseBlock = () => {
                         
                     </div>
                     <div className="adresseBlock_maindiv_subdiv_under" onClick={handleDisplay2}>
-                        <img className="adresseBlock_maindiv_subdiv_under_logo" src={Enveloppe} />
+                        <img className="adresseBlock_maindiv_subdiv_under_logo" src={Enveloppe} alt="icone d'enveloppe" />
                         {!mailDisplay ? 
                             <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub">Cliquez pour voir</p>
                             :

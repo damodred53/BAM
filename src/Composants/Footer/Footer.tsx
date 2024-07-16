@@ -9,7 +9,7 @@ const Footer = () => {
     return (
 
         <div className="footer">
-            <img className="footer_logo" src={logoNoir} />
+            <img className="footer_logo" src={logoNoir} alt="icone de la BAM de couleur noir" />
             <div className="footer_div">
                 <h3 className="footer_div_title">Copyright 2024 © Brasserie associative de Montflours</h3>
                 <p ><NavLink className="footer_div_paragraph" to='/legales'>Mentions légales</NavLink></p>

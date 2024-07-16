@@ -300,22 +300,27 @@
 
 
     .navBar  {
-        height: 250px;
+        height: 230px;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
     }
     .navBar_absolute {
         height: 250px!important;
     }
 
     .navBar_logo {
-        width: 25%;
+        width: 30%;
         height: 45%;
         margin-left: 1.5rem;
+        padding-top: 0.5rem;
     }
 
     .navBar_menu {
         width: 1rem;
         padding: 0.8rem 2.5rem 0.8rem 1rem;
         margin-right: 0%;
+        top: 2rem;
     }
 
     .hidden_menu {

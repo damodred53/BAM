@@ -24,7 +24,6 @@ const DisplayDataBam = ({ beers }) => {
 
 beers.forEach((beer) => {
     
-    /*console.log(beer.id)*/
     const result = imagesBAM[beer.id-1];
     
     logoToDisplay.push(result);
@@ -32,13 +31,11 @@ beers.forEach((beer) => {
     
 })
 
-/*console.log(logoToDisplay);*/
 const handleClick = (e, presentation) => {
 
     e.preventDefault();
     setTextToDisplay(presentation);
 }
-/*console.log(textToDisplay)*/
   return (
     <div className="display">
         

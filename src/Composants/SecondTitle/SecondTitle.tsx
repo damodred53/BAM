@@ -13,7 +13,7 @@ const SecondTitle: React.FC<SecondTitleProps> = ({textContent, className}) => {
     return (
 
         <div className={`second_title ${className || ""}`}>
-            <img className="second_title_picture" src={logoNoir}/>
+            <img className="second_title_picture" src={logoNoir} alt="logo de la BAM de couleur noir" />
             <h2 className="second_title_sub">{textContent}</h2>
         </div>
     )
