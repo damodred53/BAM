@@ -26,7 +26,7 @@ const NatureProgres = () => {
                         <li className="nature_new_div_list_element">Education populaire</li>
                     </ul>
                         
-                    <p >La mention Nature et Progrès valide notre démarche et nous fait progresser. <br/>Tout est bien présenté ci-dessous: </p>
+                    <p className="nature_new_div_paragraph" >La mention Nature et Progrès valide notre démarche et nous fait progresser. <br/>Tout est bien présenté ci-dessous: </p>
                     
                     <a target="_blank" href="https://natureetprogres.org/?Mention"><p className="link">Aller sur le site officiel</p></a>
                 </div>

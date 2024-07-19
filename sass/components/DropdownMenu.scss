@@ -134,8 +134,27 @@
     .dropdown_invisible_part_paragraph_span {
         font-size: 14px;
         padding: 1rem;
+        
     }
     
+    
+}
+
+@media (max-width:420px) {
+
+    .imageMainDiv_div {
+        justify-content: center;
+        padding-right: 1rem;
+    }
+    .imageMainDiv_div_paragraph {
+        font-size: 18px;
+        padding-left: 2rem;
+        
+    }
+    .imageMainDiv_div_link_picture2 {
+        width: 35%;
+        margin-right: 3rem;
+    }
     
 }
 
