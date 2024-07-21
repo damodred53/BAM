@@ -6,11 +6,17 @@ import SecondTitle from "../../Composants/SecondTitle/SecondTitle";
 import GoogleMap from "../../Composants/GoogleMap";
 import BigHeaderDescription from "../../Composants/BigPictureDescription/BigPictureDescription";
 import Entrepot from "../../assets/entrepot.webp";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 
 const Vente = () => {
 
-   
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[location])
 
     return (
 

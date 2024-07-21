@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import  {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import LandingPages from "./Pages/LandingPage/LandingPage.tsx"
 import Description from "./Pages/Description/Description.tsx"
 import MentionLegales from "./Pages/MentionLegales/MentionLegales.tsx"
 import Vente from "./Pages/Vente/Vente.tsx"
 import '../main.scss'
 import Erreur from './Pages/Erreur/Erreur.tsx'
+
+
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

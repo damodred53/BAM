@@ -17,6 +17,11 @@ import DataBamZone from "../../Composants/DataBamZone/DataBamZone";
 const LandingPage = () => {
 
     const location = useLocation();
+
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[location])
     
 
     useEffect(() => {
@@ -27,6 +32,8 @@ const LandingPage = () => {
                 setTimeout(() => { 
                     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
                  }, 500);
+            } else {
+                window.scrollTo(0,0)
             }
         }
     }, [location]);
