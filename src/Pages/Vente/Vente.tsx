@@ -9,7 +9,6 @@ import Entrepot from "../../assets/entrepot.webp";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-
 const Vente = () => {
 
     const location = useLocation();
@@ -20,7 +19,6 @@ const Vente = () => {
 
     return (
 
-       
         <section>
             <NavBar />
             <BigHeaderDescription picture={Entrepot} />
@@ -35,8 +33,6 @@ const Vente = () => {
                 <p className="vente_paragraph">Une urgence BAM ? n'hésitez pas à nous contacter en cliquant par ici : <Link to="/BAM/#contact">contactez-nous</Link></p>
             </div>
 
-            
-
             <div>
                 <h2 className="vente_subtitle">Nos différents points de vente</h2>
                 <GoogleMap />
@@ -48,7 +44,6 @@ const Vente = () => {
 
         </section>
            
-        
     )
 }
 

@@ -5,9 +5,10 @@
 
 .navBar {
     @include displayflexRow;
+    position: absolute;
     background-color: rgba($color: #000000, $alpha: 0.6);
     width: 100%;
-    position:fixed;
+    /*position:fixed;*/
     height: 280px;
     border: solid 4px black;
     box-sizing: border-box;
@@ -52,20 +53,25 @@
     }
 
     &_menu {
-        margin-right: 2%;
+        position: relative;
+        margin-right: 1%;
         cursor: pointer;
-        background-color: rgba($color: #000000, $alpha: 0.6);
-        border: 2px solid white;
+        /*background-color: rgba($color: #000000, $alpha: 0.6);*/
         border-radius: 50%;
-        padding: 0.9rem 1.2rem;
         position: fixed;
         right: 2rem;
         top: 6rem;
         z-index: 999;
         &_picture {
-            width: 2.5rem;
+            width: 5rem;
+            transition: 0.5s ease;
+            position: sticky;
         }
     }
+}
+
+.navBar_menu_picture:hover {
+    transform: scale(1.2);
 }
 
 .navBar_pages_list_links:hover {
@@ -76,7 +82,6 @@
 .hidden_menu {
     color : $colorWhiteWriting;
     display: none;
-    
 }
 
 // gestion de la page active sur la navbar.
@@ -337,5 +342,15 @@
     .hidden_menu_navBar_pages_list {
         padding: 0%;
         margin: 0%;
+    }
+}
+
+@media (max-width:370px) {
+    .hidden_menu_navBar_pages_list {
+        padding-right: 0rem;
+    }
+
+    .navBar_pages_list_links {
+        padding: 0.5rem;
     }
 }
