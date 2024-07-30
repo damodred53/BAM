@@ -2,7 +2,7 @@
 import Curseur from "../../assets/Curseur.webp";
 import Enveloppe from "../../assets/enveloppe.webp";
 import Telephone from "../../assets/Telephone.webp";
-import imageBam from "../../assets/Essai_BAM.webp";
+import imageBam from "../../assets/image_BAM.webp";
 import { useState } from "react";
 
 

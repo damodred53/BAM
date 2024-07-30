@@ -29,7 +29,6 @@
                 width: 12rem;
                 cursor: pointer;
                 transition: 0.5s;
-                
             }
 
             &_picture:hover {
@@ -37,10 +36,12 @@
                 transform: scale(1.1);
             }
 
-            &_cursor {
-                width: 4rem;
-                transform : rotate(-90deg);
-                display: none;
+            &_paragraph {
+                color: $colorWhiteWriting;
+                font-size: 25px;
+                margin-top: 0%;
+                margin-bottom: 3%;
+                font-weight: 700;
             }
         }
     }
@@ -62,12 +63,19 @@
 
         &_text {
             @include displayFlexGoogleMap;
-            width: 100%;
-            
+            width: 85%;
+            color: white;
+            font-size: 30px;
+            padding-right: 5rem;
+        }
+
+        &_name {
+            width: 15%;
             color: white;
             font-size: 30px;
             padding-left: 5rem;
             padding-right: 5rem;
+            white-space: nowrap;
         }
     }
  }
@@ -81,7 +89,7 @@
 }
 
 @media (max-width:1500px) {
-    .display_paragraph_text {
+    .display_paragraph_text, .display_paragraph_name {
         font-size: 24px;
     }
 
@@ -110,6 +118,11 @@
             width: 9rem;
             right: 40%;
         }
+
+        &_name {
+            width: 8%;
+            padding-left: 2rem;
+        }
     }
 }
 
@@ -120,21 +133,46 @@
     } 
 
     .display_paragraph {
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         img {
             right: 35%;
         }
     }
 
-    .display_paragraph_text {
+    .display_paragraph_text, .display_paragraph_name {
         font-size: 16px;
     }
+    .display_paragraph_text {
+        margin-top: 0%;
+        padding-top: 0%;
+
+    }
+
+    .display_upperpart_icons_paragraph {
+        font-size: 18px;
+    }
+
+    .display_paragraph_name {
+        padding-top: 2rem;
+        padding-left: 0%;
+        font-size: 24px;
+    }
+    
 }
 
 @media (max-width:500px) {
+
+    .display_paragraph {
+        
+    }
     .display_paragraph_text {
         font-size: 14px;
     }
+
+    
 }
 
 @media (max-width:420px) {

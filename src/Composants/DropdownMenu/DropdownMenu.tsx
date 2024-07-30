@@ -6,8 +6,8 @@ import MayenneLogo from "../../assets/bougerMayenne.webp";
 
 interface DropdownMenuProps {
     paragraphe: string;
-    titre : string;
-    image? : boolean;
+    titre? : string;
+    image? : string;
 }
 
 const DropdownMenu: React.FC<DropdownMenuProps> = ({paragraphe, titre, image}) => {  
@@ -42,22 +42,25 @@ const [isDisplayActivated, setIsDisplayActivated] = useState(false)
             <div className="dropdown_invisible_part_paragraph">
                 <span className="dropdown_invisible_part_paragraph_span">{paragraphe}</span>
             </div>
-            {image ? 
+            {image === "instagram" ? 
                 <div className="imageMainDiv">
                     <div className="imageMainDiv_div" title="page Instagram encore en construction">
                         <a href="" className="imageMainDiv_div_link">
-                            <p className="imageMainDiv_div_paragraph" >Venez découvrir l’Instragram de la BAM </p>
+                            <p className="imageMainDiv_div_paragraph" >Compte instagram à venir très prochainement !</p>
                             <img className="imageMainDiv_div_link_picture" src={InstagramLogo} />
                         </a>
                     </div>
-
+                </div> : ""
+                }
+                    
+            {image === "mayenne" ?
                     <div className="imageMainDiv_div">
                         <a className="imageMainDiv_div_link" href="https://www.bouger-en-mayenne.com/" target="_blank">
                             <img className="imageMainDiv_div_link_picture2"  src= {MayenneLogo} />
                             <p className="imageMainDiv_div_paragraph">Pour venir bouger en Mayenne</p>
                         </a>
                     </div>
-                </div>
+                    
                 : ""
             }
         </div>

@@ -6,14 +6,10 @@ const NatureProgres = () => {
     return (
 
             <div className="nature">
-                <h2 className="nature_title"> LA BAM EST DIURÉTIQUE ET BONNE POUR LA PLANETE</h2>
-                <div className="nature_div">
-                    <img className="nature_div_picture" src={NatureProgresLogo}/>
-                    
-                </div>
+                <h2 className="nature_title"> LA BAM EST DIURÉTIQUE ET BONNE POUR LA PLANETE <br/><br/>C'EST PAS FAUX !!</h2>
+                
 
                 <div className="nature_new_div">
-                    <h3 className="nature_new_div_title">C’est pas faux! </h3>
                     <p className="nature_new_div_paragraph">Nous sommes en accord avec pleins de Grands Sujets Planétaires et travaillons sur des réponses locales propres à notre activité : </p>
                         
                     <ul className="nature_new_div_list">
@@ -23,10 +19,14 @@ const NatureProgres = () => {
                         <li className="nature_new_div_list_element">Anti-gaspi</li>
                         <li className="nature_new_div_list_element">Démocratie (en SCIC: 1 personne = 1 voix)</li>
                         <li className="nature_new_div_list_element">Coopération avec d’autres brasseries et d’autres entreprises.</li>
-                        <li className="nature_new_div_list_element">Education populaire</li>
+                        <li className="nature_new_div_list_element">Éducation populaire : formations, visites, animations, transmission de savoir,...</li>
                     </ul>
                         
                     <p className="nature_new_div_paragraph" >La mention Nature et Progrès valide notre démarche et nous fait progresser. <br/>Tout est bien présenté ci-dessous: </p>
+                    
+                    <div className="nature_div">
+                        <img className="nature_div_picture" src={NatureProgresLogo}/>
+                    </div>
                     
                     <a target="_blank" href="https://natureetprogres.org/?Mention"><p className="link">Aller sur le site officiel</p></a>
                 </div>

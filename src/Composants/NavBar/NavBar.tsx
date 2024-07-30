@@ -39,7 +39,7 @@ const NavBar = () => {
         
 
                 <div className="navBar_menu">
-                    <img className="navBar_menu_picture" onClick={handleGoUp}  src={BAMMenu} />
+                    <img className="navBar_menu_picture" onClick={handleGoUp} title="Retour rapide au sommaire"  src={BAMMenu} />
                 </div>
             
         </div>

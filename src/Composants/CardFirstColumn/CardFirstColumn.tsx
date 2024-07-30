@@ -28,8 +28,8 @@ const CardFirstColumn = ({ id, name, presentation }) => {
     return (
         <div className="first_column" ref={logoContentPart}>
             <div className="first_column_span">
-                <h2 className="first_column_title">{name}</h2>
                 <img className="first_column_logo" src={foundLogoBam} alt="Card Image 1" onClick={handleDisplay} />
+                <h2 className="first_column_title">{name}</h2>
             </div>
             <div className="first_column_container">
                 <img className="first_column_cursor first_column_container_img" src={Cursor} alt="cursor de sélection jaune" />

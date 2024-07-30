@@ -19,9 +19,9 @@ const LandingPage = () => {
     const location = useLocation();
 
 
-    useEffect(() => {
+    /*useEffect(() => {
         window.scrollTo(0,0)
-    },[location])
+    },[location])*/
     
 
     useEffect(() => {
@@ -30,8 +30,8 @@ const LandingPage = () => {
             const element = document.querySelector(hash);
             if (element) {
                 setTimeout(() => { 
-                    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-                 }, 500);
+                    element.scrollIntoView({ behavior: "smooth" });
+                 }, 600);
             } else {
                 window.scrollTo(0,0)
             }
@@ -42,6 +42,7 @@ const LandingPage = () => {
 
         <>
         <Provider store={store}>
+        
             <NavBar />
             <section >
                 <div className="landingpage">
@@ -86,7 +87,7 @@ const LandingPage = () => {
 
                     <blockquote className="landingpage_quote">
                         “Une pinte de bière est un mets de roi.” 
-                        <cite> - William Sheakspears - </cite>
+                        <cite> - William Shakespeare - </cite>
                     </blockquote>
 
                     
@@ -95,6 +96,8 @@ const LandingPage = () => {
                 <DataBamZone />
                 <Vitrine />
                 <SecondTitle textContent="A vot’service !!" />
+
+                
 
                 <div className="article">
                     <CardLandingPage title={"Animation"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "} />
@@ -105,6 +108,8 @@ const LandingPage = () => {
                 <blockquote className="landingpage_quote centerflex">
                         <p> “BAM : la bière est artisanale, la brasserie est associative” </p>
                 </blockquote>
+
+                
 
                 <span id="contact">
                     <AdresseBlock />

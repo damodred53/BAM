@@ -12,19 +12,7 @@
         text-align: center;
     }
 
-    &_div {
-
-        width: 40%;
-        @include classicalDisplayflexRow;
-        justify-content: center;
-        font-size: 24px;
-        column-gap: 5rem;
-        margin-bottom: 3rem;
-        &_picture {
-            width: 130%;
-        }
-        
-    }
+    
 
     &_new_div {
         font-size: 28px;
@@ -51,14 +39,28 @@
 
 .link {
     transition: 0.5s;
-    width: fit-content;
+    /*width: fit-content;*/
     text-decoration: underline;
+    text-align: center;
 }
 
 .link:hover {
 
     transform: scale(1.1);
-    
+}
+
+.nature_div {
+     
+        width: 100%;
+        @include classicalDisplayflexRow;
+        justify-content: center;
+        font-size: 24px;
+        column-gap: 5rem;
+        margin-bottom: 3rem;
+        margin-top: 5rem;
+        &_picture {
+            width: 50%;
+        }
 }
 
 

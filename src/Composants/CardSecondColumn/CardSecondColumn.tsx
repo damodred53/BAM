@@ -57,8 +57,8 @@ const CardSecondColumn: React.FC<CardSecondColumnProps> = ({ id, name, presentat
             </div>
             
             <span className="second_column_span">
-                <h2 className="second_column_title">{name}</h2>
                 <img className="second_column_logo"  src={foundLogoBam} alt="Card Image 1" onClick={handleDisplay} />
+                <h2 className="second_column_title">{name}</h2>
             </span>
             
         </div>

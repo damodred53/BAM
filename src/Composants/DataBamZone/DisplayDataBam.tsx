@@ -17,6 +17,7 @@ import { useState} from "react";
 const DisplayDataBam = ({ beers }) => {
     const logoToDisplay = [];
     const [textToDisplay, setTextToDisplay] = useState();
+    const [nameToDisplay, setNameToDisplay] = useState();
 
     
     const imagesBAM = [Blanche, Ambrée, Blonde, Brune, Terroir, Masquée, Stout, Mars, Poussin, Noel, Cervoise];
@@ -30,11 +31,13 @@ beers.forEach((beer) => {
     
     
 })
-
-const handleClick = (e, presentation) => {
+console.log(beers)
+const handleClick = (e, presentation, name) => {
 
     e.preventDefault();
     setTextToDisplay(presentation);
+    setNameToDisplay(name)
+    
 }
   return (
     <div className="display">
@@ -42,22 +45,26 @@ const handleClick = (e, presentation) => {
         <div className="display_upperpart">
         
                 <div className="display_upperpart_icons">
-                    <img className="display_upperpart_icons_picture" onClick={(e)=> handleClick(e,  beers[0]?.presentation)} src={logoToDisplay[0]}/>
-                    <img className="display_upperpart_icons_cursor" src={Curseur} />
+                    <img className="display_upperpart_icons_picture" onClick={(e)=> handleClick(e,  beers[0]?.presentation, beers[0]?.name)} src={logoToDisplay[0]}/>
+                    <p className="display_upperpart_icons_paragraph">{beers[0]?.name}</p>
                 </div>
                 <div className="display_upperpart_icons">
-                    <img className="display_upperpart_icons_picture" onClick={(e)=> handleClick(e,  beers[1]?.presentation)} src={logoToDisplay[1]} />
-                    <img className="display_upperpart_icons_cursor" src={Curseur} />
+                    <img className="display_upperpart_icons_picture" onClick={(e)=> handleClick(e,  beers[1]?.presentation, beers[1]?.name)} src={logoToDisplay[1]} />
+                    <p className="display_upperpart_icons_paragraph">{beers[1]?.name}</p>
                 </div>
                 <div className="display_upperpart_icons">
-                    <img className="display_upperpart_icons_picture" onClick={(e)=> handleClick(e,  beers[2]?.presentation)} src={logoToDisplay[2]} />
-                    {beers[2]?.id ? <img className="display_upperpart_icons_cursor" src={Curseur} /> : ""}
+                    <img className="display_upperpart_icons_picture" onClick={(e)=> handleClick(e,  beers[2]?.presentation, beers[2]?.name)} src={logoToDisplay[2]} />
+                    <p className="display_upperpart_icons_paragraph">{beers[2]?.name}</p>
                 </div>
             
         </div>
 
       <div className="display_paragraph">
-        {textToDisplay ? <p className="display_paragraph_text">{textToDisplay}</p> : <p className="display_paragraph_text">Cliquer sur une bière pour en lire la description</p>};
+        {textToDisplay && nameToDisplay? <>
+        <h3 className="display_paragraph_name">{nameToDisplay}  :</h3>
+        <p className="display_paragraph_text">{textToDisplay}</p></>
+         : 
+        <p className="display_paragraph_text">Cliquer sur une bière pour en lire la description</p>};
         <div className="display_paragraph_logo">
             <img src={Stout} />
         </div>

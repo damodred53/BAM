@@ -16,7 +16,7 @@ const Irregulomadaire = () => {
     return (
 
         <div className="irregulomadaire">
-            <h1 className="irregulomadaire_title">LECTURE SAINE : A CONSOMMER SANS MODÉRATION ET EN PLUS ÇA COUTE RIEN ! </h1>
+            <h1 className="irregulomadaire_title">LECTURE SAINE : A CONSOMMER SANS MODÉRATION !! </h1>
 
             <div className="irregulomadaire_presentation">
                 <p className="irregulomadaire_presentation_paragraph">
