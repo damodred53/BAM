@@ -67,6 +67,15 @@
             color: white;
             font-size: 30px;
             padding-right: 5rem;
+
+            &_void {
+
+            width: 85%;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            
+            }
         }
 
         &_name {
@@ -171,6 +180,10 @@
    
     .display_paragraph_text {
         font-size: 14px;
+    }
+
+    .display_paragraph_text_void {
+        font-size: 24px;
     }
 
     

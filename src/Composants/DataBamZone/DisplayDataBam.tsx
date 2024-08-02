@@ -63,7 +63,7 @@ const handleClick = (e, presentation, name) => {
         <h3 className="display_paragraph_name">{nameToDisplay}  :</h3>
         <p className="display_paragraph_text">{textToDisplay}</p></>
          : 
-        <p className="display_paragraph_text">Cliquer sur une bière pour en lire la description</p>};
+        <p className="display_paragraph_text_void">Cliquer sur une bière pour en lire la description</p>};
         <div className="display_paragraph_logo">
             <img src={Stout} />
         </div>
