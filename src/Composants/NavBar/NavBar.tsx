@@ -1,6 +1,7 @@
 
 import { NavLink } from "react-router-dom"
-import BAMMenu from "../../assets/test.png"
+import BAMMenu from "../../assets/cercleWhite.png"
+import Burger from "../../assets/menuWhite.png"
 import LogoBam  from "../../assets/logo_navbar.webp"
 
 
@@ -39,6 +40,7 @@ const NavBar = () => {
         
 
                 <div className="navBar_menu">
+                    <img className="navBar_menu_burger" onClick={handleGoUp} title="Retour rapide au sommaire"  src={Burger} />
                     <img className="navBar_menu_picture" onClick={handleGoUp} title="Retour rapide au sommaire"  src={BAMMenu} />
                 </div>
             

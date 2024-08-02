@@ -11,3 +11,8 @@
     */
 
                     /*Nos bières s'inspirent à la fois des bières de traditions belges et des bières allemandes. Les membres bénévoles de la BAM participent à leur conception. Depuis cette année une part importante des malts provient de céréales cultivées sur la commune de Montflours. Nous proposons des bières brassées avec plusieurs paliés à partir de malts très variés. Ce sont des bières de garde non filtrées, refermentées en bouteille et non-pasteurisé. Nous privilégions une distribution locale (épicerie associative, AMAP, caves locales...)*/
+
+                  
+    /* 
+
+    <img className="navBar_menu_burger" onClick={handleGoUp} title="Retour rapide au sommaire"  src={Burger} />   */

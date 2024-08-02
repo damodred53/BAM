@@ -109,6 +109,12 @@
     }
 }
 
+@media (max-width:500px) {
+    .adresseBlock_maindiv {
+        margin-left: 1rem;
+    }
+}
+
 /* traitement particulier de l'adresse qui est très longue */
 
 .true_adress {

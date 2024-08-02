@@ -8,7 +8,6 @@
     position: absolute;
     background-color: rgba($color: #000000, $alpha: 0.6);
     width: 100%;
-    /*position:fixed;*/
     height: 280px;
     border: solid 4px black;
     box-sizing: border-box;
@@ -61,10 +60,20 @@
         right: 2rem;
         top: 6rem;
         z-index: 999;
+        background-color: rgba(0, 0, 0, 0.2);
+        
         &_picture {
-            width: 5rem;
+            width: 6rem;
             transition: 0.5s ease;
             position: sticky;
+        }
+
+        &_burger {
+            width: 3rem;
+            position: absolute;
+            right: 1.5rem;
+            top: 1.3rem;
+            
         }
     }
 }
@@ -72,6 +81,11 @@
 .navBar_menu_picture:hover {
     transform: scale(1.2);
 }
+
+/*.navBar_menu_burger:hover ~ .navBar_menu_picture {
+    transform: scale(1.2);
+}*/
+
 
 .navBar_pages_list_links:hover {
     outline: 2px solid $colorBackground;
@@ -352,6 +366,10 @@
     .hidden_menu_navBar_pages_list {
         padding: 0%;
         margin: 0%;
+    }
+
+    .navBar_pages_list_links {
+        padding: 0.8rem;
     }
 }
 
