@@ -30,7 +30,7 @@ beers.forEach((beer) => {
     
     
 })
-console.log(beers)
+
 const handleClick = (e, presentation, name) => {
 
     e.preventDefault();
