@@ -1,6 +1,6 @@
 
 import { NavLink } from "react-router-dom"
-import BAMMenu from "../../assets/LogoBam/Stout.webp"
+import BAMMenu from "../../assets/test.png"
 import LogoBam  from "../../assets/logo_navbar.webp"
 
 

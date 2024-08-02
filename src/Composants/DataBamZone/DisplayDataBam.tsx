@@ -10,7 +10,6 @@ import Mars from "../../assets/LogoBam/Mars.webp";
 import Poussin from "../../assets/LogoBam/Poussin.webp";
 import Noel from "../../assets/LogoBam/Noël.webp";
 import Cervoise from "../../assets/LogoBam/Cervoise.webp";
-import Curseur from "../../assets/darkArrow.webp";
 import { useState} from "react";
 
 

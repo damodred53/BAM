@@ -165,9 +165,10 @@
 
 @media (max-width:500px) {
 
-    .display_paragraph {
-        
+    .display_paragraph_name {
+        margin-bottom: 1rem;
     }
+   
     .display_paragraph_text {
         font-size: 14px;
     }
@@ -177,7 +178,11 @@
 
 @media (max-width:420px) {
     .display_upperpart_icons_picture {
-        width: 80%;
+        width: 70%;
+    }
+
+    .display_upperpart_icons_paragraph {
+        font-size: 16px;
     }
 
     .display_paragraph {
