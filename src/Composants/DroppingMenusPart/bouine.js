@@ -16,3 +16,9 @@
     /* 
 
     <img className="navBar_menu_burger" onClick={handleGoUp} title="Retour rapide au sommaire"  src={Burger} />   */
+
+
+
+    /*         "liste" : ["La Guibs Beer : ", "La Brasserie de l’Oudon : ", "L’Osmie : ", "Brasserie L'Arborescence : " , "Brasserie Cousin : " ],
+        "contact": ["contact@guibsbeer.fr", "labrasseriedeloudon@gmail.com", "glouglou@brasserie-osmie.com" , "" , ""],
+        "link" :  ["", "http://labrasseriedeloudon.com/", "" , "https://brasserie-arborescence.com/" , "https://www.facebook.com/brasseriecousin/"] */

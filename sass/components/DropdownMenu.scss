@@ -1,10 +1,12 @@
 .dropdown {
 
     height: 40px;
-    border-radius: 5px;
+    border: 2px $brownElement solid;
+    border-radius: 15px;
     height: fit-content;
     width: 100%;
     margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     &_visible_part {
         background-color: $colorBackgroundCard;
@@ -25,6 +27,8 @@
             transition: transform 1s ease;
             cursor: pointer;
         }
+
+        
     }
 
     &_invisible_part {
@@ -58,6 +62,38 @@
 
             &_span {
                 color: $colorWhiteWriting;
+            }
+        }
+
+        &_concurrent {
+            font-size: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            &_list {
+                list-style-type: none;
+                
+
+                &_name {
+                    color: $colorWhiteWriting;
+                    
+                }
+
+                &_link {
+                    color: $colorWhiteWriting;
+                    text-decoration:none;
+                    cursor: pointer;
+                    
+                    &_span {
+                        width: auto;
+                        transition: 1 ease;
+                    }
+                    &_span:hover {
+                        text-decoration: underline;
+                        transform: scale(1.05);
+                    }
+                }
+                
             }
         }
     }

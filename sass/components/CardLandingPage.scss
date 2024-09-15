@@ -20,7 +20,7 @@
         &_subtitle {
             color: $colorWritingCard;
             text-align: center;
-            font-size: 25px;
+            font-size: 28px;
             font-weight: 700;
         }
 
@@ -28,7 +28,24 @@
             padding: 0px 20px;
             color: $colorWhiteWriting;
             text-align: center;
-            font-size: 22px;
+            font-size: 21px;
+        }
+
+        &_information {
+            color: $colorWhiteWriting;
+            padding: 0px 20px;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+        &_shortText {
+            display: flex;
+            
+            margin-top: 25%;
+            
+
         }
     }
 }
@@ -49,6 +66,14 @@
             &_paragraph {
                 font-size: 20px;
             }
+            &_information {
+                font-size: 20px;
+                font-weight: normal;
+            }
+
+            &_shortText {
+                font-size: 22px;
+            }
         }
     }
 }
@@ -62,13 +87,23 @@
         &_card {
             width: 90%;
             height: 16rem;
-            
             &_subtitle {
                 font-size: 24px;
             }
     
             &_paragraph {
                 font-size: 20px;
+            }
+
+            &_information {
+                font-size: 20px;
+                font-weight: normal;
+                font-size: 18px;
+            }
+
+            &_shortText {
+                margin-top: 6%;
+                text-align: center;
             }
         }
     }
@@ -77,6 +112,30 @@
         display: none;
     }
 }
+
+@media (max-width: 700px) {
+
+
+    .article {
+        @include displayflexColumn;
+        row-gap: 2.5rem;
+        margin-bottom: 5rem;
+
+        &_card {
+            width: 90%;
+            height: 16rem;
+            overflow-y:auto;
+            
+            
+            &_subtitle {
+                font-size: 24px;
+            }
+    
+            &_paragraph {
+                font-size: 18px;
+            }
+       }
+}}
 
 @media(max-width:600px) {
 
@@ -94,6 +153,14 @@
             &_paragraph {
                 font-size: 16px;
             }
+
+            &_shortText {
+                margin-top: 10%;   
+            }
+
+            &_information {
+                font-size: 16px;
+            }
         }
     }
 
@@ -102,8 +169,19 @@
     }
 }
 
-@media (max-width:375px) {
+@media (max-width: 475px) {
+
+    .article_card {
+    
+        width: 100%;
+        padding: 0%;
+        overflow-y:scroll!important;
+    }
+
+}
+
+/*@media (max-width:375px) {
     .article_card_subtitle {
         margin: 1rem;
     }
-}
+}*/

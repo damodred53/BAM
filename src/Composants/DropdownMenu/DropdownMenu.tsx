@@ -3,17 +3,27 @@ import Cursor from "../../assets/cursor.webp";
 import { useRef, useState } from "react";
 import InstagramLogo from "../../assets/InstagramLogo.webp";
 import MayenneLogo from "../../assets/bougerMayenne.webp";
+import { Link } from "react-router-dom";
 
 interface DropdownMenuProps {
     paragraphe: string;
     titre? : string;
     image? : string;
+    name?: string[];
+    contact? : string[];
+    link? : string[]
 }
 
-const DropdownMenu: React.FC<DropdownMenuProps> = ({paragraphe, titre, image}) => {  
+const DropdownMenu: React.FC<DropdownMenuProps> = ({paragraphe, titre, image, link, name, contact, }) => {  
 
 const dropdownContentPart = useRef(null)
 const [isDisplayActivated, setIsDisplayActivated] = useState(false)
+
+
+console.log(name)
+console.log(link)
+
+
 
     const displayContent = () => {
 
@@ -38,10 +48,29 @@ const [isDisplayActivated, setIsDisplayActivated] = useState(false)
             <img className={`dropdown_visible_part_cursor ${isDisplayActivated ? "rotation" : ""}`} src={Cursor} alt="curseur" ></img>
         </div>
     
-        <div className={` dropdown_invisible_part ${isDisplayActivated ? "displayed" : ""} custom-scrollbar`}  ref={dropdownContentPart}>
-            <div className="dropdown_invisible_part_paragraph">
-                <span className="dropdown_invisible_part_paragraph_span">{paragraphe}</span>
-            </div>
+        <div className={`dropdown_invisible_part ${isDisplayActivated ? "displayed" : ""} custom-scrollbar`}  ref={dropdownContentPart}>
+            {paragraphe &&
+                <div className="dropdown_invisible_part_paragraph">
+                    <span className="dropdown_invisible_part_paragraph_span">{paragraphe}</span>
+                </div>
+            }
+
+            {/* intégration des différents partie présentant les autres producteurs locaux de bières*/}
+
+            {name && link &&
+            
+                <div className="dropdown_invisible_part_concurrent">
+                    {name.map((name2, index) => (
+                        <ul key={index} className="dropdown_invisible_part_concurrent_list">
+                            <li className="dropdown_invisible_part_concurrent_list_name">{name2}</li>
+                            <li className="dropdown_invisible_part_concurrent_list_name"><a className="dropdown_invisible_part_concurrent_list_link" target="_blank" href={`${link[index]}`}><div className="dropdown_invisible_part_concurrent_list_link_span">Lien vers le site du producteur</div></a></li>
+                        </ul>
+                        ))
+                    }
+                </div>
+            }
+
+
             {image === "instagram" ? 
                 <div className="imageMainDiv">
                     <div className="imageMainDiv_div" title="page Instagram encore en construction">
@@ -64,9 +93,6 @@ const [isDisplayActivated, setIsDisplayActivated] = useState(false)
                 : ""
             }
         </div>
-
-        
-        
     </div>
 )
 }
