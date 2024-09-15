@@ -5,9 +5,6 @@ const Mapping = () => {
     //@ts-expect-error Pour le moment, impossible de comprendre cette erreur de TypeScript
     const data = useSelector((state) => state.dataDropDown.data);
 
-
-    console.log("voici al data, :", data)
-
     return (
         <div className="mapping">
             

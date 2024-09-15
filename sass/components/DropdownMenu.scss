@@ -76,6 +76,7 @@
 
                 &_name {
                     color: $colorWhiteWriting;
+                    font-weight: 700;
                     
                 }
 
@@ -172,6 +173,14 @@
         padding: 1rem;
         
     }
+
+    .dropdown_invisible_part_concurrent_list_link_span {
+        font-size: 14px;
+    }
+
+    .dropdown_invisible_part_concurrent_list_name {
+        font-size: 18px;
+    }
     
     
 }
@@ -191,6 +200,7 @@
         width: 35%;
         margin-right: 3rem;
     }
+    
     
 }
 

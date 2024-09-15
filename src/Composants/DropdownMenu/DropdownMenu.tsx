@@ -14,14 +14,8 @@ interface DropdownMenuProps {
 
 const DropdownMenu: React.FC<DropdownMenuProps> = ({paragraphe, titre, image, link, name }) => {  
 
-
-    const props = {paragraphe, titre, image, link, name };
-    console.log(props)
 const dropdownContentPart = useRef(null)
 const [isDisplayActivated, setIsDisplayActivated] = useState(false)
-
-
-
 
     const displayContent = () => {
 
@@ -61,7 +55,7 @@ const [isDisplayActivated, setIsDisplayActivated] = useState(false)
                     {name.map((name2, index) => (
                         <ul key={index} className="dropdown_invisible_part_concurrent_list">
                             <li className="dropdown_invisible_part_concurrent_list_name">{name2}</li>
-                            <li className="dropdown_invisible_part_concurrent_list_name"><a className="dropdown_invisible_part_concurrent_list_link" target="_blank" href={`${link[index]}`}><div className="dropdown_invisible_part_concurrent_list_link_span">Lien vers le site du producteur</div></a></li>
+                            <li ><a className="dropdown_invisible_part_concurrent_list_link" target="_blank" href={`${link[index]}`}><div className="dropdown_invisible_part_concurrent_list_link_span">Lien vers le site du producteur</div></a></li>
                         </ul>
                         ))
                     }
