@@ -3,8 +3,6 @@ import Cursor from "../../assets/cursor.webp";
 import { useRef, useState } from "react";
 import InstagramLogo from "../../assets/InstagramLogo.webp";
 import MayenneLogo from "../../assets/bougerMayenne.webp";
-import { Link } from "react-router-dom";
-
 interface DropdownMenuProps {
     paragraphe: string;
     titre? : string;
@@ -14,14 +12,14 @@ interface DropdownMenuProps {
     link? : string[]
 }
 
-const DropdownMenu: React.FC<DropdownMenuProps> = ({paragraphe, titre, image, link, name, contact, }) => {  
+const DropdownMenu: React.FC<DropdownMenuProps> = ({paragraphe, titre, image, link, name }) => {  
 
+
+    const props = {paragraphe, titre, image, link, name };
+    console.log(props)
 const dropdownContentPart = useRef(null)
 const [isDisplayActivated, setIsDisplayActivated] = useState(false)
 
-
-console.log(name)
-console.log(link)
 
 
 
@@ -49,7 +47,7 @@ console.log(link)
         </div>
     
         <div className={`dropdown_invisible_part ${isDisplayActivated ? "displayed" : ""} custom-scrollbar`}  ref={dropdownContentPart}>
-            {paragraphe &&
+            { !link && 
                 <div className="dropdown_invisible_part_paragraph">
                     <span className="dropdown_invisible_part_paragraph_span">{paragraphe}</span>
                 </div>
