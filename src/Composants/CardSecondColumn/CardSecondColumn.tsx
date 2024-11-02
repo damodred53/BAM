@@ -29,13 +29,10 @@ const CardSecondColumn: React.FC<CardSecondColumnProps> = ({ id, name, presentat
        
     }
 
-    /*const logoContentPart = useRef(null);*/
     const dispatch = useDispatch();
     // @ts-expect-error Pour le moment, impossible de régler redux avec typescript
     const visiblePresentationId = useSelector((state) => state.presentation.visiblePresentationId);
 
-    /*const logoBamFirstColumn = [Blanche, Ambrée, Blonde, Brune, Terroir, Masquée];*/
-    /*const foundLogoBam = logoBamFirstColumn[id - 1];*/
 
     const isVisible = visiblePresentationId === id;
 

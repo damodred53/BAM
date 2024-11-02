@@ -1,7 +1,7 @@
 
 import { NavLink } from "react-router-dom"
 import BAMMenu from "../../assets/cercleWhite.png"
-import Burger from "../../assets/menuWhite.png"
+import Burger from "../../assets/go up.svg"
 import LogoBam  from "../../assets/logo_navbar.webp"
 
 
