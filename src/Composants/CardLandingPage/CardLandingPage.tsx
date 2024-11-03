@@ -14,7 +14,6 @@ const CardLandingPage: React.FC<CardLandingPageProp> = ({title, content, informa
 
     if (typeof content === "string") {
          sentenceLength = content.length;
-         console.log(sentenceLength)
     }
 
     
