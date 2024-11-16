@@ -2,9 +2,8 @@ import { useState, useEffect } from "react";
 import CardFirstColumn from "../CardFirstColumn/CardFirstColumn";
 import PhotoVitrine from "../../assets/photo_vitrine.webp";
 import CardSecondColumn from "../CardSecondColumn/CardSecondColumn";
-import { fetchDropdownDatas, handleBeerData } from "../../Services/Services";
-import { useDispatch } from "react-redux";
-import {addData} from "../../../redux";
+import { handleBeerData } from "../../Services/Services";
+
 
 // Définir le type des données
 interface BeerData {
@@ -15,7 +14,6 @@ interface BeerData {
 
 const Vitrine = () => {
     const [dataBam, setDataBam] = useState<BeerData[]>([]);
-    const dispatch = useDispatch();
 
     useEffect(() => {
         const fetchData = async () => {
@@ -29,20 +27,6 @@ const Vitrine = () => {
         };
 
 
-        const fetchData2 = async () => {
-            try {
-                
-                    const response = await fetchDropdownDatas();
-                    const data = await response;
-                    dispatch(addData(data));
-                }
-                catch (error) {
-                    console.log("impossible d'aller chercher les données des menus déroulants", error);
-                }
-            } 
-            
-            fetchData2();
-
         fetchData();
     }, []);
 
@@ -50,7 +34,7 @@ const Vitrine = () => {
         <section className="vitrine">
             <h1 className="vitrine_main_title">NOS BIÈRES</h1>
             <div className="vitrine_first_column">
-                {dataBam.map((cardBam) => (
+                {dataBam && dataBam.map((cardBam) => (
                     cardBam.id <= 6 ? <CardFirstColumn key={cardBam.id} id={cardBam.id} name={cardBam.name} presentation={cardBam.presentation} /> : null
                 ))}
             </div>
@@ -58,7 +42,7 @@ const Vitrine = () => {
                 <img src={PhotoVitrine} alt="Vitrine" />
             </div>
             <div className="vitrine_second_column">
-                {dataBam.map((cardBam) => (
+                {dataBam && dataBam.map((cardBam) => (
                     cardBam.id >= 7 ? <CardSecondColumn key={cardBam.id} id={cardBam.id} name={cardBam.name} presentation={cardBam.presentation} /> : null
                 ))}
             </div>

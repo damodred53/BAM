@@ -12,5 +12,5 @@ export default defineConfig({
       verbose: true, // Afficher les informations détaillées sur la compression
     }),
   ],
-  base: "/BAM/", // Base URL de votre application
+  //base: "/BAM/", // Base URL de votre application
 });

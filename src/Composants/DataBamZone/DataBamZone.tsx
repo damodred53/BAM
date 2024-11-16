@@ -15,30 +15,39 @@ const DataBamZone = () => {
   const [group3, setGroup3] = useState<BeerData[]>([]);
   const [group4, setGroup4] = useState<BeerData[]>([]);
 
+
+  useEffect(() => {
+    const fetchData2 = async () => {
+      try {
+          const data = await handleBeerData();
+          
+          setBeerData(data);
+      } catch (error) {
+          console.error("Erreur lors de la récupération des données :", error);
+      }
+  };
  
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const datafetched = await handleBeerData();
-        setBeerData(datafetched);
-      } catch (error) {
-        console.log("impossible de récupérer les données : ", error);
-      }
-    };
+    fetchData2();
+}, []);
 
-    fetchData();
-  }, []);
+
+  console.log("beerData mis à jour :", beerData);
+
 
   useEffect(() => {
-    const newGroup1 = beerData.filter((beer) => beer.id < 4);
-    setGroup1(newGroup1);
-    const newGroup2 = beerData.filter((beer) => beer.id >3 && beer.id< 7);
-    setGroup2(newGroup2);
-    const newGroup3 = beerData.filter((beer) => beer.id >6 && beer.id< 10);
-    setGroup3(newGroup3);
-    const newGroup4 = beerData.filter((beer) => beer.id >9 && beer.id< 12);
-    setGroup4(newGroup4);
+    
+    if (Array.isArray(beerData)) {
+      const newGroup1 = beerData.filter((beer) => beer.id < 4);
+      setGroup1(newGroup1);
+      const newGroup2 = beerData.filter((beer) => beer.id > 3 && beer.id < 7);
+      setGroup2(newGroup2);
+      const newGroup3 = beerData.filter((beer) => beer.id > 6 && beer.id < 10);
+      setGroup3(newGroup3);
+      const newGroup4 = beerData.filter((beer) => beer.id > 9 && beer.id < 12);
+      setGroup4(newGroup4);
+    }
+    
 
   }, [beerData]);
 

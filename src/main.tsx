@@ -6,19 +6,22 @@ import Description from "./Pages/Description/Description.tsx"
 import MentionLegales from "./Pages/MentionLegales/MentionLegales.tsx"
 import Vente from "./Pages/Vente/Vente.tsx"
 import '../main.scss'
-import Erreur from './Pages/Erreur/Erreur.tsx'
+import { Provider } from 'react-redux'; // Importez le Provider
+import { store } from '../redux.tsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/BAM" element={<LandingPages />}></Route>
-        <Route path='/description' element={<Description />}></Route>
-        <Route path='/legales' element ={ <MentionLegales />}></Route>
-        <Route path='/vente' element={<Vente />}></Route>
-        <Route path='/*' element={<Erreur />}></Route>
-      </Routes>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPages />}></Route>
+          <Route path='/description' element={<Description />}></Route>
+          <Route path='/legales' element ={ <MentionLegales />}></Route>
+          <Route path='/vente' element={<Vente />}></Route>
+          <Route path='/*' element={<LandingPages />}></Route>
+        </Routes>
+      </Router>
+    </Provider>
   </React.StrictMode>,
 )
