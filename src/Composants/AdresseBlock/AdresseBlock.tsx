@@ -36,7 +36,7 @@ const AdresseBlock = () => {
                         {!telephoneNumberDisplay ?
                             <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub">Cliquez pour voir</p>
                             :
-                            <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub">06 01 05 34 56</p>
+                            <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub"><a className="num_tel" href="tel:">06 01 05 34 56</a></p>
                         }
                         
                     </div>
