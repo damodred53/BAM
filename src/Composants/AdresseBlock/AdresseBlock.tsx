@@ -36,7 +36,7 @@ const AdresseBlock = () => {
                         {!telephoneNumberDisplay ?
                             <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub">Cliquez pour voir</p>
                             :
-                            <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub"><a className="num_tel" href="tel:">06 01 05 34 56</a></p>
+                            <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub"><a className="num_tel" href="tel:0601053456">06 01 05 34 56</a></p>
                         }
                         
                     </div>
@@ -45,9 +45,9 @@ const AdresseBlock = () => {
                         {!mailDisplay ? 
                             <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub">Cliquez pour voir</p>
                             :
-                            <p className="adresseBlock_maindiv_subdiv_under_paragraph_sub true_adress">brasserie.montflours@orange.fr</p>
-                            }
-                        
+                            <a className="adresseBlock_maindiv_subdiv_under_paragraph_sub true_adress" href="mailto:'brasserie.montflours@orange.fr"
+                            >brasserie.montflours@orange.fr</a>
+                        }
                     </div>
                 </div>
             </div>

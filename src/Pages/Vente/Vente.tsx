@@ -29,15 +29,13 @@ const Vente = () => {
                     sur la carte. Nous vendons aussi en direct aux marchés de Montlfours (17h30 à 19h) et d'Argentré (17h à 19h30). 
                     Pour les commandes, n'hésitez pas à nous contacter.
                 </p>
-                <p className="vente_paragraph">Une urgence BAM ? n'hésitez pas à nous contacter en cliquant par ici : <Link to="/BAM/#contact">contactez-nous</Link></p>
+                <p className="vente_paragraph">Une urgence BAM ? n'hésitez pas à nous contacter en cliquant par ici : <Link to="/#contact">contactez-nous</Link></p>
             </div>
 
             <div>
                 <h2 className="vente_subtitle">Nos différents points de vente</h2>
                 <GoogleMap />
             </div>
-            
-            
             <Footer />
 
 

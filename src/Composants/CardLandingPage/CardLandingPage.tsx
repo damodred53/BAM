@@ -28,13 +28,13 @@ const CardLandingPage: React.FC<CardLandingPageProp> = ({title, content, informa
         }
         </>
     }
-  
-/* <p className={`${sentenceLength < 220 ? 'article_card_shortText' : ''} article_card_information`}> */
+
 
     return (
 
         <article className="article_card">
             <span className="article_card_span">{trueContent}</span>
+            { title === "Commande de fûts" && <a href="#contact" className="article_card_order_button">Commandez</a>}
         </article>
     )
 

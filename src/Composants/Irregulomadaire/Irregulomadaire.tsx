@@ -10,6 +10,7 @@ import numero7 from "../../Irregulomadaires/Irregulo_7.pdf";
 import numero8 from "../../Irregulomadaires/Irregulo_8.pdf";
 import numero9 from "../../Irregulomadaires/Irregulo_9.pdf";
 import numero10 from "../../Irregulomadaires/Irregulo_10.pdf";
+import numero11 from "../../Irregulomadaires/Irregulo_11.pdf";
 
 const Irregulomadaire = () => {
 
@@ -36,6 +37,7 @@ const Irregulomadaire = () => {
                 <a className="irregulomadaire_numero_link" href={numero8} download="irregulo_8.pdf">Numéro 8</a>
                 <a className="irregulomadaire_numero_link" href={numero9} download="irregulo_9.pdf">Numéro 9</a>
                 <a className="irregulomadaire_numero_link" href={numero10} download="irregulo_10.pdf">Numéro 10</a>
+                <a className="irregulomadaire_numero_link" href={numero11} download="irregulo_11.pdf">Numéro 11</a>
             </div>
 
         </div>

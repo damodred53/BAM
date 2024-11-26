@@ -11,6 +11,15 @@
         height: 30rem;
         width: 20rem;
         border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &_order_button {
+            text-align: center!important;
+            color: white;
+            font-size: 23px;
+        }
 
         &_picture {
             width: 100%;
@@ -42,10 +51,7 @@
 
         &_shortText {
             display: flex;
-            
             margin-top: 25%;
-            
-
         }
     }
 }

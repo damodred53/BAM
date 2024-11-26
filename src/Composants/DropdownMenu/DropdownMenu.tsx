@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import InstagramLogo from "../../assets/InstagramLogo.webp";
 import MayenneLogo from "../../assets/bougerMayenne.webp";
 interface DropdownMenuProps {
-    paragraphe: string;
+    paragraphe: string | string[];
     titre? : string;
     image? : string;
     name?: string[];
@@ -31,8 +31,6 @@ const [isDisplayActivated, setIsDisplayActivated] = useState(false)
         }
     }
 
-
-
     return (
     <div data-testid="dropdown-1" className="dropdown ">
         <div className={"dropdown_visible_part"} onClick={displayContent}>
@@ -41,10 +39,12 @@ const [isDisplayActivated, setIsDisplayActivated] = useState(false)
         </div>
     
         <div className={`dropdown_invisible_part ${isDisplayActivated ? "displayed" : ""} custom-scrollbar`}  ref={dropdownContentPart}>
-            { !link && 
-                <div className="dropdown_invisible_part_paragraph">
-                    <span className="dropdown_invisible_part_paragraph_span">{paragraphe}</span>
-                </div>
+            { !link && Array.isArray(paragraphe) && 
+                paragraphe.map((date, index) => (
+                    <ul key={index} className="dropdown_invisible_part_concurrent_list">
+                        <li className="dropdown_invisible_part_concurrent_list_name">{date}</li>
+                    </ul>
+                ))
             }
 
             {/* intégration des différents partie présentant les autres producteurs locaux de bières*/}

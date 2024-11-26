@@ -32,8 +32,6 @@ const DataBamZone = () => {
 }, []);
 
 
-  console.log("beerData mis à jour :", beerData);
-
 
   useEffect(() => {
     
